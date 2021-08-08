@@ -85,3 +85,23 @@
 
 ul {margin: 0; padding: 0;}
 li {list-style:none;}
+
+/* ---------------------- */
+.exam2 > ul {
+  width:100%; height:auto; 
+  background-color: #fff;
+}
+
+.exam2 li {
+  float:left;
+  width:100px; height:100px;
+  background-color: #adf;
+  background-image:linear-gradient(45deg, #fda, #afa, #f7a);
+}
+
+.exam2 > ul:after,
+.exam2 > ul::after {
+  content:""; display:block;
+  clear:both;
+  width: 100%; height: 0;
+}
