@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* main.css */
+/* reset.css ----------------------------------- */
+body {margin:0;}
+
+/* design ------------------------------------ */
+#wrap {
+  width:1440px; height:auto; min-height:500px;
+  margin:auto;
+}
+
+#headBox    { width: 1440px; height: 100px; background-color: #ccc; }
+#slideBox   { width: 1440px; height: 600px; background-color: #aaa; }
+#newBox     { width: 1440px; height: 700px; background-color: #eee; }
+#subBox     { width: 1440px; height: 350px; background-color: #aaa; }
+#bestBox    { width: 1440px; height: 700px; background-color: #eee; }
+#galleryBox { width: 1440px; height: 750px; background-color: #ccc; }
+#sponsorBox { width: 1440px; height: 100px; background-color: #999; }
+#footBox    { width: 1440px; height: 450px; background-color: #777; }
