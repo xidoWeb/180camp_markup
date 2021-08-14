@@ -1,14 +1,17 @@
 @charset "UTF-8";
 /* main.css */
-/* reset.css __________________________________________ */
+/* reset.css ========================================== */
 body {margin:0;}
+h1,h2,h3,h4,h5,h6 {margin:0;}
+ul,ol,dl,li,dt,dd {margin:0; padding:0;}
+ul,ol,li{ list-style:none; }
 
-/* common.css _________________________________________ */
+/* common.css ========================================== */
 .max_width_01 { 
   width:95%; min-width:940px; max-width:1280px;  
   margin:auto;}
   
-/* design __________________________________________ */
+/* design ========================================== */
 #wrap {
   width:100%; min-width:960px; /* min-width:1440px; */
   height:auto; min-height:500px;
