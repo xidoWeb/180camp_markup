@@ -5,19 +5,25 @@ body {margin:0;}
 
 /* design __________________________________________ */
 #wrap {
-  width:1440px; height:auto; min-height:500px;
+  width:100%; min-width:1440px; 
+  height:auto; min-height:500px;
   margin:auto;
-
 }
+
 /* #headBox __________________________________________ */
 #headBox    { 
   width: 100%; height: auto; 
-  padding:20px 100px 10px; box-sizing: border-box;
+  padding:20px 50px 10px; box-sizing: border-box;
   background-color: #ccc; }
   
-  #headBox::after {
-    content:" "; display:block; width:100%; height:0; clear:both;
-  }     
+  .area_head {
+    width: 100%; max-width:1440px; height: auto;
+    margin:auto;
+  }
+  .area_head::after {
+    content:" "; display:block; 
+    width:100%; height:0; clear:both;
+  } 
   
 #logo { 
   float:left; width: 120px;height: 70px; 
@@ -46,13 +52,13 @@ background-color: #aaa; }
 .area_title{
   width:940px; height:70px; 
   margin:auto;
-  background-color:#ccc;
+  background-color:#aaa;
 }
 .area_content{
   width:940px; height:370px; 
   /* margin:auto; margin-top:48px; margin-bottom: 50px; */
   margin:48px auto 50px;
-  background-color:#ccc;
+  background-color:#aaa;
 }
 .area_indicator{
   width:140px; height:30px; 
@@ -83,11 +89,44 @@ background-color: #aaa; }
 }
 
 /* #galleryBox ____________________________________________  */
-#galleryBox { width: 100%; height: 750px; background-color: #ccc; }
+#galleryBox { 
+  width: 100%; height: 750px; 
+  padding-top: 75px; box-sizing: border-box;
+  background-color: #ccc; }
+  
+#galleryBox .area_title { background-color: #fff;}
+#galleryBox .area_content { 
+  height:420px; background-color: #777;}
+
 
 /* #sponsorBox ____________________________________________  */
-#sponsorBox { width: 100%; height: 100px; background-color: #999; }
+#sponsorBox { 
+  width: 100%; height: 100px; 
+  padding:10px 0; box-sizing: border-box;
+  background-color: #999; }
+.sponsor_area {
+  width: 940px; height: 80px; 
+  margin:auto; 
+  background-color: #fff;}
 
 /* #footBox ____________________________________________  */
-#footBox    { width: 100%; height: 450px; background-color: #777; }
+#footBox    { 
+  width: 100%; height: 450px; 
+  padding-top: 68px; box-sizing: border-box;
+  background-color: #777; }
+
+.area_foot {
+  width: 940px; height: auto;
+  margin:auto;  
+}
+  
+  .info_logo{
+    width:120px; height:70px; 
+    margin-bottom:45px;
+    background-color: #aaa;
+    }
+  .info_company{
+    width: 940px; height: 135px;
+    background-color: #aaa;
+  }
 
