@@ -1,19 +1,93 @@
 @charset "UTF-8";
 /* main.css */
-/* reset.css ----------------------------------- */
+/* reset.css __________________________________________ */
 body {margin:0;}
 
-/* design ------------------------------------ */
+/* design __________________________________________ */
 #wrap {
   width:1440px; height:auto; min-height:500px;
   margin:auto;
+
+}
+/* #headBox __________________________________________ */
+#headBox    { 
+  width: 100%; height: auto; 
+  padding:20px 100px 10px; box-sizing: border-box;
+  background-color: #ccc; }
+  
+  #headBox::after {
+    content:" "; display:block; width:100%; height:0; clear:both;
+  }     
+  
+#logo { 
+  float:left; width: 120px;height: 70px; 
+  background-color: #777;}
+#navBox { 
+  float:right; width: 510px; height: 70px; 
+  background-color: #777;}
+
+
+/* #slideBox __________________________________________ */
+#slideBox   { 
+width: 100%; height: 600px; padding-top:100px; box-sizing: border-box;
+background-color: #aaa; }
+#adCon_01 { 
+  width: 780px; height: 400px; 
+  margin:auto; 
+  background-color: #ddd;
+  }
+  
+/* #newBox ____________________________________________  */
+#newBox     { 
+  width: 100%; height:700px; 
+  padding-top:62px; box-sizing: border-box;
+  background-color: #eee; }
+  
+.area_title{
+  width:940px; height:70px; 
+  margin:auto;
+  background-color:#ccc;
+}
+.area_content{
+  width:940px; height:370px; 
+  /* margin:auto; margin-top:48px; margin-bottom: 50px; */
+  margin:48px auto 50px;
+  background-color:#ccc;
+}
+.area_indicator{
+  width:140px; height:30px; 
+  margin:auto;
+  background-color:#ccc;
 }
 
-#headBox    { width: 1440px; height: 100px; background-color: #ccc; }
-#slideBox   { width: 1440px; height: 600px; background-color: #aaa; }
-#newBox     { width: 1440px; height: 700px; background-color: #eee; }
-#subBox     { width: 1440px; height: 350px; background-color: #aaa; }
-#bestBox    { width: 1440px; height: 700px; background-color: #eee; }
-#galleryBox { width: 1440px; height: 750px; background-color: #ccc; }
-#sponsorBox { width: 1440px; height: 100px; background-color: #999; }
-#footBox    { width: 1440px; height: 450px; background-color: #777; }
+/* #subBox ____________________________________________  */
+#subBox     { 
+  width: 100%; height: 350px; 
+  padding-top:50px; box-sizing: border-box;
+  background-color: #aaa; }
+#subBox > .area {
+  width: 1100px; height: 300px;
+  margin:auto;
+  background-color: #ddd;
+  }
+
+/* #bestBox ____________________________________________  */
+#bestBox { 
+  width: 100%; height: 700px; 
+  padding-top:175px; box-sizing: border-box;
+  background-color: #eee; }
+#bestBox > .area {
+  width: 1100px; height: 380px; 
+  margin:auto;
+  background-color: #aaa;
+}
+
+/* #galleryBox ____________________________________________  */
+#galleryBox { width: 100%; height: 750px; background-color: #ccc; }
+
+/* #sponsorBox ____________________________________________  */
+#sponsorBox { width: 100%; height: 100px; background-color: #999; }
+
+/* #footBox ____________________________________________  */
+#footBox    { width: 100%; height: 450px; background-color: #777; }
+
