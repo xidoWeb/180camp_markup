@@ -1,5 +1,6 @@
 /* b_01_nthChild.css */
 
+.none {display: none;}
 
 .code_exam {
   width: 900px; height:auto; min-height:1000px;
@@ -29,12 +30,13 @@
   font-weight: 700;
 }
 
-.code_exam ul {
+.code_exam .n_child,
+.code_exam .n_child_02 {
   padding:20px; border-radius:10px;
   background-color: #fee;  
 }
 
-.code_exam li {
+.code_exam .list {
   list-style: decimal;
   margin-left:30px; margin-bottom:20px;
 }
@@ -55,3 +57,7 @@
 .n_child li:nth-child(3n + 2) { 
   list-style-type:lower-alpha; font-weight:100; }
 
+/* ----------------------------------------------- */
+.n_child_02 .list:nth-child(1) { font-weight: 700; color:#f00; }
+.n_child_02 .list:nth-child(3) { font-weight: 700; color:#f00; }
+.n_child_02 dd:nth-last-child(4) { font-weight: 700; color:#f00; }
