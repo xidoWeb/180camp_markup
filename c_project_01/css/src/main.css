@@ -3,9 +3,9 @@
 
 /* design ========================================== */
 #wrap {
-  /* width:100%;  */
+  width:100%; 
   /* min-width:960px;  */
-  width: 1440px;
+  /* width: 1440px; */
   height:auto; min-height:500px;
   margin:auto; padding-top:100px;
 }
@@ -71,13 +71,28 @@
   
 /* #slideBox __________________________________________ */
 #slideBox   { 
+position: relative;
 width: 100%; height: 600px; padding-top:100px; box-sizing: border-box;
 background-color: #aaa; }
+
+/* ---------- */
+.slide_btn {
+  position: absolute; top: 0; bottom: 0; left:0; right:0; margin:auto;
+  width:100%; min-width:940px; max-width:1440px; height:0;
+}
+
+.slide_btn button{ 
+  width:60px; height:40px; background-color: #0cc;}
+.slide_btn .next {float:right;}
+.slide_btn .prev {float:left;}
+
+/* ---------- */
 #adCon_01 { 
   width: 780px; height: 400px; 
-  margin:auto; 
+  margin:auto;
   background-color: #ddd;
   }
+
   
 /* #newBox ____________________________________________  */
 #newBox     { 
