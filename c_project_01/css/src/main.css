@@ -162,6 +162,23 @@ background-color: #aaa; }
   background-color: #aaa;
 }
 
+.best_area { 
+  float:left; width: 230px; height: 380px;
+  background-color: #fa0;  
+}
+  
+.best_card_list { 
+  float:right; width:800px; height: 380px;
+  background-color: #fff;
+}
+.best_card_list ul {  width: 100%; height: 100%; }
+.best_card_list li { 
+  float:left; width: 240px; height: 380px; 
+  margin-left:40px;
+  background-color: #0cc;
+}
+
+
 /* #galleryBox ____________________________________________  */
 #galleryBox { 
   width: 100%; height: 750px; 
