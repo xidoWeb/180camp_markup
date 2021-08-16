@@ -3,26 +3,34 @@
 <html lang="ko-KR">
   <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common/reset.css">
+    <link rel="stylesheet" href="../css/common/common.css">    
     <link rel="stylesheet" href="../css/src/main.css">
     <title>웹기초</title>
   </head>
   <body>
     <div id="wrap">
     
-      <div id="headBox">
+      <header id="headBox">
         <div class="area_head">
           <h1 id="logo">osam</h1>
-          <div id="navBox">navBox</div>
+          <nav id="navBox">
+            <h2 class="blind">page navigation</h2>
+          </nav>
         </div>
-      </div><!-- // #headBox -->
+      </header><!-- // #headBox -->
       
-      <div id="slideBox">
+      <section id="slideBox">
+        <h2 class="blind">주요 광고영역</h2>
         <div id="adCon_01">
           adCon_01
         </div>
-      </div><!-- // #slideBox-->
-      
-      <div id="newBox">
+      </section><!-- // #slideBox-->
+       
+      <article id="newBox">
         <h2 class="area_title">area_title</h2>
         <div class="area_content">
           <!-- area_content -->
@@ -32,36 +40,39 @@
           <!-- area_indicator -->
         <ul></ul>
         </div>
-      </div><!-- // #newBox -->
+      </article><!-- // #newBox -->
       
-      <div id="subBox">
+      <section id="subBox">
         <div class="max_width_01 area">
-          area
+          <h2>보조 광고영역</h2>
         </div>
-      </div><!-- // #subBox -->
+      </section><!-- // #subBox -->
       
-      <div id="bestBox">
-        <div class="max_width_01 area">area</div>
-      </div><!-- // #bestBox -->
+      <article id="bestBox">
+        <div class="max_width_01 area">
+          <h2>인기 메뉴 리스트</h2>
+        </div>
+      </article><!-- // #bestBox -->
       
-      <div id="galleryBox">
+      <article id="galleryBox">
         <h2 class="max_width_01 area_title">area_title</h2>
         <div class="max_width_01 area_content">area_content</div>
-      </div><!-- // #galleryBox -->
+      </article><!-- // #galleryBox -->
       
-      <div id="sponsorBox">
+      <aside id="sponsorBox">
+        <h2 class="blind">후원사</h2>
         <div class="max_width_01 sponsor_area">
           <!-- sponsor_area -->
           <ul></ul>
         </div>
-      </div><!-- // #sponsorBox -->
+      </aside><!-- // #sponsorBox -->
       
-      <div id="footBox">
+      <footer id="footBox">
         <div class="max_width_01 area_foot">
           <h2 class="info_logo">오삼커피 회사 정보</h2>
           <div class="info_company">info_company</div>
         </div>
-      </div><!-- // #footBox -->
+      </footer><!-- // #footBox -->
     </div><!-- // #wrap -->
   </body>
 </html>
