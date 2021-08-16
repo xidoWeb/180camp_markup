@@ -1,0 +1,7 @@
+/* b_03_semantic.css */
+
+#wrap {
+  width: 1000px; height:auto; min-height: 500px;
+  margin:auto;
+  background-color: #eee;
+}
