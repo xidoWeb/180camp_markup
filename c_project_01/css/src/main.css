@@ -3,9 +3,9 @@
 
 /* design ========================================== */
 #wrap {
-  width:100%; 
+  /* width:100%;  */
   /* min-width:960px;  */
-  /* width: 1440px; */
+  width: 1440px;
   height:auto; min-height:500px;
   margin:auto; padding-top:100px;
 }
@@ -95,7 +95,8 @@ background-color: #aaa; }
 
   
 /* #newBox ____________________________________________  */
-#newBox     { 
+#newBox { 
+  position: relative;
   width: 100%; height:700px; 
   padding-top:62px; box-sizing: border-box;
   background-color: #eee; }
@@ -105,17 +106,27 @@ background-color: #aaa; }
   margin:auto;
   background-color:#aaa;
 }
-.area_content{
-  width:940px; height:370px; 
-  /* margin:auto; margin-top:48px; margin-bottom: 50px; */
-  margin:48px auto 50px;
-  background-color:#aaa;
-}
+
 .area_indicator{
+  position: absolute; bottom:70px; left:0; right:0;
   width:140px; height:30px; 
   margin:auto;
   background-color:#ccc;
 }
+
+.area_content{
+  width:940px; height:370px; 
+  /* margin:auto; margin-top:48px; margin-bottom: 50px; */
+  margin:48px auto 0;
+  background-color:#aaa;
+}
+
+.area_content ul { width: 100%; height: 100%;}
+.area_content li { 
+  float:left; width:300px; height:370px; 
+  margin-left:20px;
+  background-color: #0cc;}
+
 
 /* #subBox ____________________________________________  */
 #subBox     { 
