@@ -22,3 +22,16 @@
 .absolute{ background-color: #0B9964;}
 .relative{ background-color: #CDD310;}
 
+/* -------------------------------------------- */
+#wrap {height: 5000px;}
+.static {
+  position:static; 
+  top:1000px; right:50px; z-index:100;
+}
+
+.fixed { 
+  position: fixed;
+  top:0; left:0; 
+  /* right:0; bottom:0; 
+  margin:auto; */
+}
