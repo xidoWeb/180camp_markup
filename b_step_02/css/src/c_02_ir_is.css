@@ -49,3 +49,29 @@
     .ir > li:nth-child(7) > a:hover {
       background-image: url("../../img/icon_color/005-paint-brush.png");
     }
+    
+    /* ------------------------------------------------- */
+    .code_exam .is { margin-top: 10px; background-color: #adf;}
+    .is li{
+      float:left; width:100px; height:100px; 
+      border:1px solid #333; padding:10px; box-sizing: border-box;
+      background-color: #fff;
+    }
+    .is li a {
+      display: block; width:64px; height:64px; 
+      background-image: url("../../img/icon_color/icon_sprite.png");
+      background-repeat: no-repeat; background-position:0 0; background-size: auto 64px;
+      background-color: #fda;
+    }
+ 
+    
+    .is a > span { display: block; position: absolute; z-index:-1; width: 0; height: 0; overflow: hidden; }
+    
+    .is li:nth-child(1)>a { background-position-x: -74px;} /* -74px * 1 */
+    .is li:nth-child(2)>a { background-position-x: -148px;} /* -74px * 2 */
+    .is li:nth-child(3)>a { background-position-x: -222px;} /* -74px * 3 */
+    .is li:nth-child(4)>a { background-position-x: calc(-74px * 5);} /* -74px * 4 */
+    .is li:nth-child(5)>a { background-position-x: calc(-74px * 6);} /* -74px * 4 */
+    
+    .is li a:hover { background-color: #afc; background-position-x:calc(-74px * 0);}
+    .is li a:focus { background-color: #333;}
