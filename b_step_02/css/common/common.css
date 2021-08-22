@@ -22,9 +22,10 @@
 .code_exam h1 {
   width: 100%; height: auto;
   padding-bottom:10px;
-  font-size:20px; font-weight:900;
+  font-size:25px; font-weight:900;
   text-align: center;
 }
+.code_exam h1 > a {color:#333;}
 
 .code_exam .part {
   width: 90%; height:auto;
@@ -34,15 +35,33 @@
   background-color: #fff;
 }
 
+.code_exam hr {margin:20px 0;}
+
 .code_exam h2 {
   width: 100%; height: auto;
   margin-bottom: 10px; padding-bottom: 10px;
   border-bottom:1px solid #555;
   font-weight: 700;
 }
+.code_exam p {
+  width: 100%;
+  padding: 10px; box-sizing: border-box;
+  line-height: 1.5;
+  background-color: #eee;
+}
 
 .code_exam .ex_wrap {
   width:100%; height:auto;
-  padding:20px; border-radius:10px; box-sizing: border-box;
+  margin-top: 1px;
+  padding:10px; border-radius:10px; box-sizing: border-box;
   background-color: #fee;  
 }
+
+.code_exam li {
+    height:auto;
+    margin:0; margin-bottom: 10px;
+    padding-bottom: 5px;  box-sizing: inherit;
+    border-bottom: 1px solid #ccc;}
+.code_exam a {
+    display: inline-block; border: none;
+    color:#555; text-decoration: none;}
