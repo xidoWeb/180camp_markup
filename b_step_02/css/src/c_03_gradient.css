@@ -1,0 +1,41 @@
+/* c_03_gradient.css */
+
+.ex_wrap li{
+  width:100%; height:600px;
+  margin-bottom:20px;
+  border:1px solid #333;
+  padding:20px; padding-top:100px; box-sizing: border-box;
+  font-size:50px; font-weight: 700;
+  color:#fff;
+}
+.ex_wrap li:last-child { margin-bottom:0; }
+/* ----------------------------------------- */
+
+.ex_wrap li:nth-child(1) {
+  background-image: url("../../img/etc/linear_image.png");
+  background-repeat: repeat-x;
+  background-position: 0 -2px;
+  background-size:auto 105%;  
+}
+
+.ex_wrap li:nth-child(2) {
+  background-color: #4C49DA;
+  background-image:linear-gradient(0deg, #A440F3,#4C49DA, #0095E9, #8CE3FF);
+}
+
+.ex_wrap li:nth-child(3) {
+  background-color: #4C49DA;
+  background-image:linear-gradient(90deg, #A440F3 30%,#4C49DA 50%, #0095E9 90%, #8CE3FF);
+}
+
+.ex_wrap li:nth-child(4) {
+  background-color: #4C49DA;
+  background-image:linear-gradient(45deg, #A440F3 30%,#4C49DA 30%, #4C49DA 50%, #0095E9 50%, #8CE3FF);
+}
+
+.ex_wrap li:nth-child(5) {
+  background-color: #ddd;
+  background-image:linear-gradient(45deg, rgba(255,200,0,0.1) 30%,#0095E9 50%, #8CE3FF), url("../../img/background/florian-wehde-OJScR4tDRyc-unsplash.jpg");
+  background-repeat:auto, no-repeat;
+  background-position: auto, 50% 50%;
+}
