@@ -16,16 +16,16 @@
 .code_exam {
   width: 1200px; height:auto; min-height:1000px;
   margin:auto; padding:20px; box-sizing: border-box;
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 
 .code_exam h1 {
   width: 100%; height: auto;
-  padding-bottom:10px;
-  font-size:25px; font-weight:900;
+  padding-top: 20px; padding-bottom:10px;
+  font-size:35px; font-weight:900;
   text-align: center;
 }
-.code_exam h1 > a {color:#333;}
+.code_exam h1 > a {color:#05a;}
 
 .code_exam .part {
   width: 90%; height:auto;
@@ -35,7 +35,7 @@
   background-color: #fff;
 }
 
-.code_exam hr {margin:20px 0;}
+.code_exam hr {margin-top:20px; border-color:#999; }
 
 .code_exam h2 {
   width: 100%; height: auto;
