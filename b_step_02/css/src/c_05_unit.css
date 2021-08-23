@@ -1,0 +1,48 @@
+/* c_05_unit.css */
+.code_exam {width:900px;}
+.code_exam .ex_wrap {  padding:20px;  }
+
+/* 공통 색상설정  */
+.ex_wrap figure{ 
+  display:block;  margin:auto;
+  color:#fff; line-height:150%;
+  background-color: #a57;}
+  
+.ex_wrap div {
+  margin:auto; margin-top:50px;
+  color:#77f; letter-spacing:-2px; font-size:14px;
+  background-color: #fff;
+}
+
+.ex_wrap p {
+  margin:auto; margin-top: 30px;
+  padding:20px; box-sizing:border-box; color:#555;
+  white-space:nowrap;
+  background-color: #fa0;
+}
+
+.ex_wrap a {
+  display: block;
+  margin:auto; margin-top:5px; 
+  color:#fff;
+  background-color: rgba(0, 100, 255, 0.7);
+}
+
+.ex_wrap span {
+  display: block; 
+  margin:auto; margin-top:30px; 
+  background-color: rgba(50, 100, 50, 0.9);
+}
+
+.ex_wrap strong {
+  display: block; 
+  margin:auto; margin-top:20px; color:#fff;
+  background-color: #333;
+}
+/* pixel 단위이해 ---------------------------------------- */
+.pixel_unit {  width:640px; height:640px; }
+.pixel_unit div {  width: 320px; height: 320px; }
+.pixel_unit p {  width:160px; height:160px;}
+.pixel_unit a { width:320px; height:320px; }
+.pixel_unit span {  width:160px; height:160px;}
+.pixel_unit strong {width:80px; height:80px;} 
