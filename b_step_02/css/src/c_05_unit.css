@@ -66,10 +66,20 @@
   16px === 1em  
   ex: ( 640px / 16 )em
 */
-/* .part:not(.part:last-child) {display:none;} */
-
 .em_unit_2 { width: 40em; height: 40em; font-size:1em;}
 .em_unit_2 p { width:40em; height:40em; font-size:0.5em; }
 .em_unit_2 button { width:40em; height:40em; font-size:0.5em; }
 .em_unit_2 span { width:40em; height:40em; font-size:2em;}
 .em_unit_2 strong { width:40em; height:40em; font-size: 0.5em;}
+
+/* rem 단위(rem) ------------------------------ */
+/*
+  16px === 1em === 1rem 
+  ex: ( 640px / 16 )rem
+*/
+/* .part:not(.part:last-child) {display:none;} */
+.rem_unit_2 { width: 40rem; height: 40rem; font-size:1.6rem; }
+.rem_unit_2 p { width:20rem; height:20rem; font-size:0.8rem;}
+.rem_unit_2 button { width:10rem; height:10rem; font-size:0.4rem;}
+.rem_unit_2 span { width:20rem; height:20rem; font-size:0.8rem;}
+.rem_unit_2 strong { width:10rem; height:10rem;  font-size:0.4rem;}
