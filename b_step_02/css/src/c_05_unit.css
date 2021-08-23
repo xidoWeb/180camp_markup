@@ -14,7 +14,7 @@
   display:block; margin:20px; color:#fff; background-color: rgba(10,10,10,0.7); }
 
 /* pixel값 단위(px)  ----------------------------- */
-.pixel_unit { width: 640px; height: 640px; display: none;}
+.pixel_unit { width: 640px; height: 640px;}
 .pixel_unit p { width:320px; height:320px; }
 .pixel_unit button { width:160px; height:160px;}
 .pixel_unit span { width:320px; height:320px;}
@@ -25,7 +25,7 @@
   16px === 12pt
   ex: 640px / 16 * 12 => ?pt
 */
-.point_unit { width: 480pt; height: 480pt; }
+.point_unit { width: 480pt; height: 480pt;}
 .point_unit p{ width: 240pt; height: 240pt; }
 .point_unit button{ width: 120pt; height: 120pt; }
 .point_unit span{ width: 240pt; height: 240pt; }
@@ -33,7 +33,33 @@
 
 /* percent 단위(%) ------------------------------ */
 .percent_unit { width:640px; height:640px; }
-.percent_unit p{ width:50%; height:50%; padding:0;}
-.percent_unit button{ width:50%; height:50%; }
-.percent_unit span{ width:200%; height:200%; }
-.percent_unit strong{ width:50%; height:50%; }
+.percent_unit p{ width:50%; height:50%; padding:0; }
+.percent_unit button{ width:50%; height:50%;}
+.percent_unit span{ width:200%; height:200%;}
+.percent_unit strong{ width:50%; height:50%;}
+
+/* em 단위(em) ------------------------------ */
+/*
+  16px === 1em  
+  ex: ( 640px / 16 )em
+*/
+
+.em_unit { width: 40em; height: 40em; }
+.em_unit p { width:20em; height:20em; }
+.em_unit button { width:10em; height:10em; }
+.em_unit span { width:20em; height:20em; }
+.em_unit strong { width:10em; height:10em; }
+
+
+
+/* rem 단위(rem) ------------------------------ */
+/*
+  16px === 1em === 1rem 
+  ex: ( 640px / 16 )rem
+*/
+
+.rem_unit { width: 40rem; height: 40rem; }
+.rem_unit p { width:20rem; height:20rem; }
+.rem_unit button { width:10rem; height:10rem; }
+.rem_unit span { width:20rem; height:20rem; }
+.rem_unit strong { width:10rem; height:10rem; }
