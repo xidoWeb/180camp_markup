@@ -114,6 +114,20 @@ background-color: #aaa; }
   background-color:#ccc;
 }
 
+.area_indicator ul {
+  width: 100%; height: 100%;
+}
+
+.area_indicator li {
+  float:left;
+  width: 30px; height: 30px; 
+  margin-left:25px;
+  background-color: #0cc;
+}
+.area_indicator li:first-child {
+  margin-left:0;
+}
+
 .area_content{
   width:940px; height:370px; 
   /* margin:auto; margin-top:48px; margin-bottom: 50px; */
@@ -162,42 +176,67 @@ background-color: #aaa; }
   background-color: #aaa;
 }
 
-.best_area { 
-  float:left; width: 230px; height: 380px;
-  background-color: #fa0;  
-}
-  
-.best_card_list { 
-  float:right; width:800px; height: 380px;
-  background-color: #fff;
-}
-.best_card_list ul {  width: 100%; height: 100%; }
-.best_card_list li { 
-  float:left; width: 240px; height: 380px; 
-  margin-left:40px;
-  background-color: #0cc;
-}
+  .best_area { 
+    float:left; width: 230px; height: 380px;
+    background-color: #fa0;  
+  }
+    
+  .best_card_list { 
+    float:right; width:800px; height: 380px;
+    background-color: #fff;
+  }
+  .best_card_list ul {  width: 100%; height: 100%; }
+  .best_card_list li { 
+    float:left; width: 240px; height: 380px; 
+    margin-left:40px;
+    background-color: #0cc;
+  }
 
 
 /* #galleryBox ____________________________________________  */
-#galleryBox { 
+#galleryBox {   
   width: 100%; height: 750px; 
   padding-top: 75px; box-sizing: border-box;
   background-color: #ccc; }
   
-#galleryBox .area_title { background-color: #fff;}
-#galleryBox .area_content { 
-  height:420px; background-color: #777;}
+  #galleryBox .area_title { background-color: #fff;}
+  #galleryBox .area_content { 
+    position: relative;
+    height:420px; background-color: #777;}
 
+    .gallery_main_content {
+      float:left; 
+      width: 540px; height: 420px; 
+      background-color: #0cc;
+    }
+      #galleryBox .gallery_list {
+        position: absolute; right: 0; bottom: 0;
+        width: 320px; height: auto; min-height:270px; 
+        background-color: #fff;;}
+      .gallery_list li {
+        margin-left: 0;
+        width: 100%; height: 50px; margin-bottom: 20px;
+      }
+      .gallery_list li:last-child {margin-bottom: 0;}
 
 /* #sponsorBox ____________________________________________  */
 #sponsorBox { 
   width: 100%; height: 100px; 
   padding:10px 0; box-sizing: border-box;
   background-color: #999; }
-.sponsor_area {
-  height: 80px;   
-  background-color: #fff;}
+  .sponsor_area {
+    overflow: hidden;
+    width: 1260px; height: 80px;   
+    background-color: #fff;}
+  .sponsor_area ul {
+    width:1760px; height: 100%; 
+  }
+  .sponsor_area li {
+    float:left; width: 140px; height: 80px; 
+    margin-right:20px;
+    background-color: #0cc;
+  }
+  .sponsor_area li:first-child {margin-left: 0;}
 
 /* #footBox ____________________________________________  */
 #footBox    { 
@@ -215,8 +254,19 @@ background-color: #aaa; }
     background-color: #aaa;
     }
   .info_company{
-    width:100%; height: 135px;
+    width:100%; height:auto; min-height: 135px;
     background-color: #aaa;
+  }
+  .company_content {
+    float: left;
+    width: 500px; height: 200px; 
+    background-color: #0cc;
+  }
+  .social_family {
+    float:right;
+    width: 200px; height: 160px;
+    margin-top: 40px;
+    background-color: #0cc;
   }
 
 /* ----------------------------------------------------- */
