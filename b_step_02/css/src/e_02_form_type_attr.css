@@ -24,6 +24,7 @@ fieldset > div {
 #usrId::placeholder,
 #usrPw::placeholder { color:#f00; font-weight: 700; }
 
+.img_btn { height:20px; }
 
 textarea { 
   width:500px; height:50px;

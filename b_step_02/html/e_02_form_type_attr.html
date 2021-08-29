@@ -28,7 +28,7 @@
       <h2>사용할 기능</h2>
       <div class="ex_wrap">
         <form action="#" method="POST">
-          <fieldset class="none">
+          <fieldset>
             <legend>내용을 입력</legend>
             <div>
               <label for="usrId" class="usr_id">사용자 ID 입력 </label> :
@@ -58,7 +58,7 @@
             </div>
           </fieldset>
 
-          <fieldset class="none">
+          <fieldset>
             <legend>체크 항목 1</legend>
             <p>가고 싶은 여행지 1가지만 선택하시오.</p>
             <div>
@@ -75,7 +75,7 @@
             </div>
           </fieldset>
 
-          <fieldset class="none">
+          <fieldset>
             <legend>체크 항목 2</legend>
             <p>저녁에 먹고 싶은 음식을 모두 고르시오.</p>
             <div>
@@ -125,17 +125,34 @@
 
           <fieldset>
             <legend>기타</legend>
+            <div>
+              보이않지만 자료를 가지고 보낼 수 있도록 처리하는 기능
+              <input type="hidden" name="hdn" id="hdn" value="..."  />
+            </div>
+            <div>
+              <label for="color">사용할 색상 선택</label> : 
+              <input type="color" name="color" id="color" value="">
+            </div>
+            <div>
+              <label for="count">갯수선택</label> : 
+              <input type="number" name="count" id="count2"
+                     min="0" max="20" step="4" value="1" />
+            </div>
+            <div>
+              <label for="count2">갯수선택</label> : 
+              <input type="range" name="count2" id="count2"
+                     min="0" max="20" step="1" value="1" />
+            </div>
           </fieldset>
 
           <!-- ========================== -->
-          <fieldset class="none">
+          <fieldset>
             <legend>확인용</legend>
             <input type="submit" value="확인" />
             <input type="reset" value="취소" />
-            <input type="image" src="../img/icon/001-pin.png" alt="위치안내" value="위치안내"
-                   height="20px" />
-            <input type="button" value="번호 전송" accept=".jpg,.png,.pdf,.ai,.html,.css,.js" />
-            <input type="file" value="" />
+            <input type="image" src="../img/icon/001-pin.png" alt="위치안내" class="img_btn" />
+            <input type="button" value="번호 전송" />
+            <input type="file" accept=".jpg,.png,.pdf,.ai,.html,.css,.js" />
           </fieldset>
         </form>
       </div>
