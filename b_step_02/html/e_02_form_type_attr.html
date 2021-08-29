@@ -90,11 +90,45 @@
               <input type="checkbox" id="check_03" name="food" value="보쌈" />
               <label for="check_03">보쌈</label>
             </div>
+          </fieldset>      
 
+          <fieldset>
+            <legend>복합용</legend>
+            <div>
+              <label for="multiText" class="blind">전달할 내용</label>
+              <textarea name="multiText" id="multiText" cols="30" rows="3"></textarea>
+            </div>
+            <div>
+              <label for="drink">음료수를 고르세요.</label>
+              <select name="drink" id="drink" multiple>
+                <option>선택하세요.</option>
+                <optgroup label="커피류">
+                  <option value="espresso">에스프레소</option>
+                  <option value="americano">아메리카노</option>
+                  <option value="latte">카페라떼</option>
+                  <option value="mocha">카페모카</option>
+                </optgroup>
+                <optgroup label="주스류">
+                  <option value="orange">오렌지주스</option>
+                  <option value="apple">사과주스</option>
+                  <option value="banana">바나나주스</option>
+                </optgroup>
+              </select>
+            </div>
 
+            <div>
+              <button type="submit">확인</button>
+              <button type="reset">취소</button>
+              <button type="button">찾기</button>
+            </div>
           </fieldset>
 
           <fieldset>
+            <legend>기타</legend>
+          </fieldset>
+
+          <!-- ========================== -->
+          <fieldset class="none">
             <legend>확인용</legend>
             <input type="submit" value="확인" />
             <input type="reset" value="취소" />
@@ -102,14 +136,6 @@
                    height="20px" />
             <input type="button" value="번호 전송" accept=".jpg,.png,.pdf,.ai,.html,.css,.js" />
             <input type="file" value="" />
-          </fieldset>
-
-          <fieldset>
-            <legend>복합용</legend>
-          </fieldset>
-
-          <fieldset>
-            <legend>기타</legend>
           </fieldset>
         </form>
       </div>
