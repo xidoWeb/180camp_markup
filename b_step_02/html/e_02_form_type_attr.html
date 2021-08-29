@@ -28,7 +28,7 @@
       <h2>사용할 기능</h2>
       <div class="ex_wrap">
         <form action="#" method="POST">
-          <fieldset>
+          <fieldset class="none">
             <legend>내용을 입력</legend>
             <div>
               <label for="usrId" class="usr_id">사용자 ID 입력 </label> :
@@ -60,10 +60,38 @@
 
           <fieldset>
             <legend>체크 항목 1</legend>
+            <p>가고 싶은 여행지 1가지만 선택하시오.</p>
+            <div>
+              <input type="radio" id="select_01" name="tour" value="제주도" checked />
+              <label for="select_01">제주도</label>
+            </div>
+            <div>
+              <input type="radio" id="select_02" name="tour" value="괌" />
+              <label for="select_02">괌</label>
+            </div>
+            <div>
+              <input type="radio" id="select_03" name="tour" value="파리" />
+              <label for="select_03">파리</label>
+            </div>
           </fieldset>
 
           <fieldset>
             <legend>체크 항목 2</legend>
+            <p>저녁에 먹고 싶은 음식을 모두 고르시오.</p>
+            <div>
+              <input type="checkbox" id="check_01" name="food" value="족발" checked />
+              <label for="check_01">족발</label>
+            </div>
+            <div>
+              <input type="checkbox" id="check_02" name="food" value="치킨" checked />
+              <label for="check_02">치킨</label>
+            </div>
+            <div>
+              <input type="checkbox" id="check_03" name="food" value="보쌈" />
+              <label for="check_03">보쌈</label>
+            </div>
+
+
           </fieldset>
 
           <fieldset>
