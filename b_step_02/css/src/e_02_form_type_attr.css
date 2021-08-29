@@ -1,0 +1,25 @@
+/* e_02_form_type_attr.css */
+
+form {
+  width: 100%; height:auto;
+  padding:1rem; box-sizing: border-box;
+  background-color: #fff;
+}
+
+fieldset {
+  margin-bottom: 2rem;
+}
+legend {
+  line-height: 130%; padding: 1rem; 
+}
+
+fieldset > div {
+  width: 100%; height: auto; 
+  margin-bottom:1rem; padding:10px; box-sizing: border-box;
+  border-bottom:1px solid #adf;
+}
+
+.usr_id {font-weight: bold;}
+.input_text { width:500px; height:30px; text-indent:0.5rem; }
+#usrId::placeholder,
+#usrPw::placeholder { color:#f00; font-weight: 700; }

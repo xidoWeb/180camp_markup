@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- e_02_form_type_attr.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap">
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/src/e_02_form_type_attr.css">
+
+  <link rel="apple-touch-icon" href="../favicon.png">
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+
+  <title>e_02_form_type_attr</title>
+</head>
+<body>
+  <!-- layout -->
+  <div class="code_exam">
+    <h1><a href="./a_content.html">웹표준</a></h1>
+    <hr />
+    <div class="part">
+      <h2>사용할 기능</h2>
+      <div class="ex_wrap">
+        <form action="#" method="POST">
+          <fieldset>
+            <legend>내용을 입력</legend>
+            <div>
+              <label for="usrId" class="usr_id">사용자 ID 입력 </label> :
+              <input type="text" id="usrId" name="usrId" value="" class="input_text"
+                     placeholder="사용할 ID를 입력하세요." maxlength="5" required />
+            </div>
+            <div>
+              <label for="usrPw">비밀번호 입력 </label> :
+              <input type="password" id="usrPw" name="usrPw" value="" class="input_text"
+                     placeholder="비밀번호를 입력하세요." maxlength="12" required />
+            </div>
+            <hr />
+            <div>
+              <label for="usrTel">전화번호를 입력 </label> :
+              <input type="tel" id="usrTel" name="usrTel" value="" class="input_text"
+                     placeholder="전화번호를 입력하세요." maxlength="11" />
+            </div>
+            <div>
+              <label for="usrMail">이메일을 입력</label> :
+              <input type="email" id="usrMail" name="usrMail" value="" class="input_text"
+                     placeholder="exam@exam.com" required />
+            </div>
+            <div>
+              <label for="ursUrl">url 입력</label> :
+              <input type="url" id="ursUrl" name="ursUrl" value="" class="input_text"
+                     placeholder="http://naver.com" required />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>체크 항목 1</legend>
+          </fieldset>
+
+          <fieldset>
+            <legend>체크 항목 2</legend>
+          </fieldset>
+
+          <fieldset>
+            <legend>확인용</legend>
+            <button type="submit">확인</button>
+          </fieldset>
+
+          <fieldset>
+            <legend>복합용</legend>
+          </fieldset>
+
+          <fieldset>
+            <legend>기타</legend>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- javascript -->
+</body>
+</html>
