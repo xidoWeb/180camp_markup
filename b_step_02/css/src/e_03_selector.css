@@ -22,3 +22,28 @@
 
 /* .siblings_02 dt:hover ~ dd {display: block;} */
 .siblings_02 dt:hover + dd {display: block;}
+
+/* =========================================== */
+
+.smartphone_select {
+  width: 100%; height: auto;
+  margin-top: 1rem; padding: 0.5rem; box-sizing: border-box;
+  background-color: #fff;
+}
+
+.smartphone_select li {
+  width:300px; height:30px; 
+  line-height: 30px;
+  /* background-color: #aff; */
+}
+.smartphone_select input { 
+  position: absolute; z-index: -1; width: 0; height: 0; overflow: hidden; }
+
+.smartphone_select label {
+  display:inline-block;  width: 80%; height: 100%; cursor: pointer;}
+.smartphone_select i {
+  margin-right:0.5rem; color:#999; font-size: 1.3rem;
+}
+
+.smartphone_select input:checked + label { font-weight: 700; }
+.smartphone_select input:checked + label > i { color:#f00; }
