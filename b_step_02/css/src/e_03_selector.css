@@ -47,3 +47,29 @@
 
 .smartphone_select input:checked + label { font-weight: 700; }
 .smartphone_select input:checked + label > i { color:#f00; }
+
+/* ============================ */
+.select {width: 100%; margin-bottom: 1rem; border-bottom: 1px solid #000;}
+
+.select button { margin:0.3rem; }
+[type] { color:#fff; font-weight: 700; border:1px solid #f7a;}
+button[type="submit"] { background-color: #7ac; padding:0.3rem 1rem; }
+button[type="reset"] { background-color: #ca3; padding:0.3rem 2rem; }
+button[type^="b"] { background-color: #f53; padding:0.3rem 2rem; }
+button[type$="n"] { 
+    background-color: #f53; padding:0.3rem 5rem; border-top-color:#333; }
+
+
+[class] { border-radius:0.3rem;}
+
+[id$="Box"]{ background-color: #ddd; }
+[class*="ex"]{ background-color: #ddd; }
+
+/*
+  속성선택자 : []내부에 요소의 속성을 담는 형태
+  [속성명] {}
+  [속성명="값"] {}
+  [속성명^="시작글자"] {}
+  [속성명$="마무리글자"] {}
+  [속성명*="값전체에서 포함된 글자"] {}
+*/
