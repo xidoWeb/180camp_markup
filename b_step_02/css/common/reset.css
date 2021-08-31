@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* reset.css */
-
+:root { font-size:16px; }
 body { 
   margin: 0; line-height:100%;
   /* font-family: sans-serif; */
