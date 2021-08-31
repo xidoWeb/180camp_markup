@@ -51,3 +51,23 @@
   .ro_05:hover > span {
     transform: rotate(-45deg);
   }
+  /* skew , deg */
+  .sk { 
+    width:7rem; height:7rem; 
+    margin:2rem;
+    background-image:linear-gradient(#acf, #fca);}
+    .sk_01 { transform:skewX(-45deg); transform-origin:0 100%;}
+    .sk_02 { transform:skewY(-15deg); transform-origin:0 100%;}
+    .sk_03 { transform:skew(15deg, 60deg); transform-origin:50% 50%;}
+
+
+  /* 복합기능 */
+  .mul {
+    float:left;
+    width: 8rem; height: 8rem; 
+    margin:10rem; background-color: #acf;
+  }
+
+  .multi_01:hover { transform:scale(200%) translateX(50px);}
+  .multi_02 { transform:scale(150%) rotate(45deg);}
+  .multi_02:hover { transform:scale(100%) rotate(0);}
