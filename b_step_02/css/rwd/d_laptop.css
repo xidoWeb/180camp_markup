@@ -1,0 +1,12 @@
+/* d_laptop.css */
+
+
+/* -------------------------------------------------------- */
+@media screen and (min-width:1440px) {
+  /* 기준디바이스 크기 : 1440px */
+  #wrap {
+    background-color: #ddd;
+  }
+} /* @media screen and (min-width:1440px) */
+
+

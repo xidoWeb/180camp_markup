@@ -1,0 +1,12 @@
+/* b_smartphone.css */
+
+
+/* smartphone ------------------------------------------------ */
+@media screen and (max-width:767px){
+  /* 기준디바이스 크기 : 320px */
+  #wrap {
+    background-color: #faa;
+  }
+} /* @media screen and (max-width:767px)  */
+
+
