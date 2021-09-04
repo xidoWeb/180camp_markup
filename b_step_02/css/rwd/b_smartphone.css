@@ -1,7 +1,5 @@
 /* b_smartphone.css */
-:root {
-  --color-red :#FC7676;
-}
+
 @supports (background-color:var(--color-red)) {
 /* smartphone ------------------------------------------------ */
 @media screen and (max-width:767px){
@@ -9,7 +7,7 @@
 /* size / 기준 * 100  => ?vw  */
 
 #wrap {
-  width: 100%; height:auto;
+  width: 100%;  min-width:auto; height:auto;
   
 }
 
@@ -24,7 +22,7 @@
   width: 100%; /* height: 25rem; */
   height:125vw; min-height:25rem;
   padding-top: 6.25rem;
-  /* background-color: #FC7676; */
+  background-color: #FC7676;
   background-color: var(--color-red);
 }
 
