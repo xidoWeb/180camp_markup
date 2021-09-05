@@ -3,71 +3,45 @@
 @media screen and (min-width:1440px) {
   /* 기준 디바이스 크기 : 1440px  */
   body {background-color: #eef;}
-  #wrap {
-    width:100%; min-width:auto;
-    height:auto; min-height:auto;
-    margin:auto; padding-top:0;
-  }
+  /* #wrap { } */
 /* #headBox __________________________________________ */
 #headBox { 
-  position: fixed; top: 0; left:0; z-index:1500;
-  width: 100%; height: 100px; 
-  /* padding:20px 50px 10px; box-sizing: border-box; */
-  background-color: #fff; 
-}
+  height: 6.25rem; 
+  padding-top: 1.25rem; padding-bottom: 0.625rem; }
 #headBox > * {display: none;}
 
 /* #slideBox __________________________________________ */
 #slideBox   { 
-position: relative;
-width: 100%; height:100vh; min-height: 700px; 
-padding-top: 100px; box-sizing: border-box;
-background-color: #7af; }
+min-height: 43.75rem; max-height: 75rem;
+padding-top: 6.25rem;
+ }
 
 /* #newBox ____________________________________________  */
 #newBox { 
-position: relative;
-width: 100%; height:700px; 
-/* padding-top:62px; box-sizing: border-box; */
-background-color: #eee; 
+  height:43.75rem;
+  padding-top: 4.0625rem; padding-bottom: 4.375rem;
 }
 
 /* #subBox ____________________________________________  */
-#subBox     { 
-position: relative;
-width: 100%; height: 350px; 
-/* padding-top:50px; box-sizing: border-box; */
-/* background-color: #aaa;  */
-background-color: #ffbd55; 
-}
+#subBox { height: 21.875rem; }
 
 /* #bestBox ____________________________________________  */
 #bestBox { 
-width: 100%; height: 700px; 
-padding-top:175px; box-sizing: border-box; 
+  height: 43.75rem;
+  padding-top: 10.9375rem; padding-bottom: 9.0625rem;
 }
 
 /* #galleryBox ____________________________________________  */
-#galleryBox {   
-width: 100%; height: 750px; 
-padding-top: 75px; box-sizing: border-box;
-/* background-color: #ccc;  */
-background-color: rgba(255, 189, 85, 0.2);
+#galleryBox {
+  height: 46.875rem; 
+  padding-top: 5rem; padding-bottom: 8.125rem;
 }
 
 /* #sponsorBox ____________________________________________  */
-#sponsorBox { 
-width: 100%; height: 100px; 
-/* padding:10px 0; box-sizing: border-box; */
-/* background-color: #999;  */
-}
+#sponsorBox { height: 6.25rem; }
 
 /* #footBox ____________________________________________  */
-#footBox    { 
-width: 100%; height: 450px; 
-padding-top: 68px; box-sizing: border-box;
-background-color: #333; 
-}
+#footBox    { height: 28.125rem;}
 
 }/* @media screen and (min-width:1440px) */
 
