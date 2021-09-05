@@ -2,6 +2,13 @@
 
 @media screen and (min-width:1440px) {
   /* 기준 디바이스 크기 : 1440px  */
-  body { background-color: var(--yellow_01);}
-}
+  body {background-color: #eef;}
+  #wrap {
+    width:100%; min-width:auto;
+    height:auto; min-height:auto;
+    margin:auto; padding-top:0;
+  }
+
+
+}/* @media screen and (min-width:1440px) */
 
