@@ -3,46 +3,57 @@
 @media screen and (max-width:599px) {
   /* 기준 디바이스 크기 : 320px  */
   body {background-color: #eee;}
-  /* #wrap { } */
-/* #headBox __________________________________________ */
+  
+/* #wrap { }
+   ====================================================*/
+
+/* #headBox 
+   ==================================================== */
   #headBox { height: 3.125rem; padding:0.5rem 0.625rem; }
   #headBox > * {display: none;}
 
-/* #slideBox __________________________________________ */
-#slideBox   { 
-  min-height:31.25rem; 
-  padding-top: 3.125rem;
-}
+/* #slideBox 
+    ==================================================== */
+  #slideBox   { 
+    min-height:31.25rem; 
+    padding-top: 3.125rem;
+  }
 
-/* #newBox ____________________________________________  */
-#newBox { 
-  height:100vh; min-height:37.5rem; 
-  padding-top: 5rem; padding-bottom: 5.625rem;
-}
+/* #newBox 
+    ====================================================  */
+  #newBox { 
+    height:100vh; min-height:37.5rem; 
+    padding-top: 5rem; padding-bottom: 5.625rem;
+  }
 
-/* #subBox ____________________________________________  */
-#subBox { height:100vh; min-height: 31.25rem; }
+/* #subBox 
+    ====================================================  */
+  #subBox { height:100vh; min-height: 31.25rem; }
 
-/* #bestBox ____________________________________________  */
-#bestBox { 
-  height:auto; min-height: 43.75rem;
-  padding: 2.5rem; padding-bottom: 8.75rem; 
-}
+/* #bestBox 
+    ====================================================  */
+  #bestBox { 
+    height:auto; min-height: 43.75rem;
+    padding: 2.5rem; padding-bottom: 8.75rem; 
+  }
 
-/* #galleryBox ____________________________________________  */
-#galleryBox {  
-  height:auto; min-height: 61.25rem; 
-  padding-top: 1.5rem; padding-bottom: 8.75rem;
-}
+/* #galleryBox 
+    ====================================================  */
+  #galleryBox {  
+    height:auto; min-height: 61.25rem; 
+    padding-top: 1.5rem; padding-bottom: 8.75rem;
+  }
 
-/* #sponsorBox ____________________________________________  */
-#sponsorBox { 
-  height: 25rem;
-}
+/* #sponsorBox 
+    ====================================================  */
+  #sponsorBox { 
+    height: 25rem;
+  }
 
-/* #footBox ____________________________________________  */
-#footBox { height: 26.5625rem; }
-#footBox > * {display: none;}
+/* #footBox 
+    ====================================================  */
+  #footBox { height: 26.5625rem; }
+  #footBox > * {display: none;}
 
 /* =========================================== */
 } /* @media screen and (max-width:599px) */

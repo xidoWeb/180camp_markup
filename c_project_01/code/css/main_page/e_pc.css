@@ -1,47 +1,60 @@
-/* main_page/e_pc.css */
+  /* main_page/e_pc.css */
 
 @media screen and (min-width:1440px) {
-  /* 기준 디바이스 크기 : 1440px  */
-  body {background-color: #eef;}
-  /* #wrap { } */
-/* #headBox __________________________________________ */
-#headBox { 
-  height: 6.25rem; 
-  padding-top: 1.25rem; padding-bottom: 0.625rem; }
-#headBox > * {display: none;}
+    /* 기준 디바이스 크기 : 1440px  */
+    body {background-color: #eef;}
+    
+/* #wrap 
+    ========================================== */
+/* #wrap { } */
 
-/* #slideBox __________________________________________ */
-#slideBox   { 
-min-height: 43.75rem; max-height: 75rem;
-padding-top: 6.25rem;
- }
+/* #headBox 
+    ========================================== */
+  #headBox { 
+    height: 6.25rem; 
+    padding-top: 1.25rem; padding-bottom: 0.625rem; }
+  #headBox > * {display: none;}
 
-/* #newBox ____________________________________________  */
-#newBox { 
-  height:43.75rem;
-  padding-top: 4.0625rem; padding-bottom: 4.375rem;
-}
+/* #slideBox 
+    ========================================== */
+  #slideBox   { 
+  min-height: 43.75rem; max-height: 75rem;
+  padding-top: 6.25rem;
+  }
 
-/* #subBox ____________________________________________  */
-#subBox { height: 21.875rem; }
+/* #newBox 
+    ==========================================  */
+  #newBox {  
+    height:43.75rem;
+    padding-top: 4.0625rem; padding-bottom: 4.375rem;
+  }
+  .area_title { width:940px; }
 
-/* #bestBox ____________________________________________  */
-#bestBox { 
-  height: 43.75rem;
-  padding-top: 10.9375rem; padding-bottom: 9.0625rem;
-}
+/* #subBox 
+    ==========================================  */
+  #subBox { height: 21.875rem; }
 
-/* #galleryBox ____________________________________________  */
-#galleryBox {
-  height: 46.875rem; 
-  padding-top: 5rem; padding-bottom: 8.125rem;
-}
+/* #bestBox 
+    ==========================================  */
+  #bestBox { 
+    height: 43.75rem;
+    padding-top: 10.9375rem; padding-bottom: 9.0625rem;
+  }
 
-/* #sponsorBox ____________________________________________  */
-#sponsorBox { height: 6.25rem; }
+/* #galleryBox 
+    ==========================================  */
+  #galleryBox {
+    height: 46.875rem; 
+    padding-top: 5rem; padding-bottom: 8.125rem;
+  }
 
-/* #footBox ____________________________________________  */
-#footBox    { height: 28.125rem;}
+/* #sponsorBox 
+    ==========================================  */
+  #sponsorBox { height: 6.25rem; }
+
+/* #footBox 
+    ==========================================  */
+  #footBox    { height: 28.125rem;}
 
 }/* @media screen and (min-width:1440px) */
 
