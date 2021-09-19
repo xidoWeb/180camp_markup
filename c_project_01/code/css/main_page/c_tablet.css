@@ -35,7 +35,22 @@
 
 /* #subBox 
   ============================================  */
-  #subBox { height:37.5rem; }
+  #subBox { height:37.5rem;  background-color: #fff; }
+  #subBox > .area { width: 100%; min-width:auto; height:100%; }
+  .sub_area {
+    z-index:100; left:50%;  bottom:15%; 
+    width:500px; 
+    transform:translateX(-50%);
+  }
+  .sub_area_btn a:nth-child(1) {
+    width: 250px; }
+
+  .sub_area_img {
+    width: 100%; height:100%;
+    background-image:url("../../img/main_page_re/mobile/e_subBox/sub_img.png");
+    opacity: 0.3;
+  }
+
 
 /* #bestBox 
   ============================================  */
