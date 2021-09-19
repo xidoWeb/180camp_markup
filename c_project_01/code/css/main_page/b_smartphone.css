@@ -22,9 +22,17 @@
 /* #newBox 
     ====================================================  */
   #newBox { 
-    height:100vh; min-height:37.5rem; 
+    height:100vh; min-height:37.5rem; max-height:37.5rem;
     padding-top: 5rem; padding-bottom: 5.625rem;
   }
+  .area_title {
+    width: 100%; height:auto; 
+    text-align: center; font-size:1.75rem; 
+  }
+
+  .newBox_area{ width:50.875rem; height:20rem; }
+  .newBox_area li { width: 16.25rem; margin-left: 1.0625rem;  }
+
 
 /* #subBox 
     ====================================================  */
@@ -42,6 +50,10 @@
   #galleryBox {  
     height:auto; min-height: 61.25rem; 
     padding-top: 1.5rem; padding-bottom: 8.75rem;
+  }
+
+  #galleryBox .area_content {
+    width: 100%;
   }
 
 /* #sponsorBox 
