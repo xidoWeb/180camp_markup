@@ -15,10 +15,15 @@
 
 /* #slideBox 
    =================================================== */
-#slideBox   { 
-  min-height: 37.5rem; 
-  padding-top: 6.25rem;
-}
+   #slideBox   { 
+      min-height: 37.5rem; 
+      padding-top: 6.25rem;
+    }
+    
+    .slide_btn button{
+      transform: translateY(-50%);
+    }
+    
 
 /* #newBox 
    =================================================== */
