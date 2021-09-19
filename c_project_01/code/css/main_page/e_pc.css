@@ -13,7 +13,7 @@
   #headBox { 
     height: 6.25rem; 
     padding-top: 1.25rem; padding-bottom: 0.625rem; }
-  #headBox > * {display: none;}
+  #logo { width: 120px;height: 70px; }
 
 /* #slideBox 
     ========================================== */
@@ -33,7 +33,7 @@
 /* #subBox 
     ==========================================  */
   #subBox { height: 21.875rem; }
-  
+
   .sub_area { right: 70px; width: 400px; }
   .sub_area_img {
     float:left;

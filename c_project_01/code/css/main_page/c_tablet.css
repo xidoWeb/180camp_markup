@@ -8,7 +8,31 @@
 /* #headBox 
   ============================================ */
   #headBox { height: 3.125rem; padding:0.5rem 1.0625rem; }
-  #headBox > * {display: none;}
+  .area_head {height: 100%;}
+  #logo { width: 60px; height: 35px; }
+
+  .nav_btn {
+    display:block; float:right;
+    position: relative; z-index:100;  
+    width:35px; height:35px;}
+  
+  #navBox {
+    position: absolute; top: 0; left: 0; width: 100%; height:100vh;
+    padding:8px 17px;
+    background-color: rgba(26, 93, 84, 1);
+  }
+  #navBox h2 { 
+    position: relative; z-index:100;
+    width: 60px; height: 35px; 
+    margin-bottom: 30px;
+    background-image: url("../../img/headBox/navBox/logo_white.png");
+    background-image: url("../../img/headBox/navBox/logo_white.svg");
+    background-repeat: no-repeat; background-position: 50% 50%;
+    background-size: contain;
+  }
+  .unb, .gnb {float:none;}
+  
+
 
 /* #slideBox 
   ============================================ */

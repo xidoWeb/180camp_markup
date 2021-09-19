@@ -11,7 +11,7 @@
 /* #headBox 
    =================================================== */
 #headBox {height: 6.25rem; padding:1.25rem 2.5rem 0.625rem;}
-#headBox > * {display: none;}
+#logo { width: 120px;height: 70px; }
 
 /* #slideBox 
    =================================================== */
