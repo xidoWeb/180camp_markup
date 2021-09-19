@@ -1,7 +1,7 @@
   /* main_page/e_pc.css */
 
-@media screen and (min-width:1440px) {
-    /* 기준 디바이스 크기 : 1440px  */
+@media screen and (min-width:90rem) {
+    /* 기준 디바이스 크기 : 90rem  */
     body {background-color: #eef;}
     
 /* #wrap 
@@ -13,7 +13,7 @@
   #headBox { 
     height: 6.25rem; 
     padding-top: 1.25rem; padding-bottom: 0.625rem; }
-  #logo { width: 120px;height: 70px; }
+  #logo { width: 7.5rem;height: 4.375rem; }
 
 /* #slideBox 
     ========================================== */
@@ -34,7 +34,7 @@
     ==========================================  */
   #subBox { height: 21.875rem; }
 
-  .sub_area { right: 70px; width: 400px; }
+  .sub_area { right: 4.375rem; width: 25rem; }
   .sub_area_img {
     float:left;
     width: 28.75rem; height: 18.75rem;
@@ -64,5 +64,5 @@
     ==========================================  */
   #footBox    { height: 28.125rem;}
 
-}/* @media screen and (min-width:1440px) */
+}/* @media screen and (min-width:90rem) */
 
