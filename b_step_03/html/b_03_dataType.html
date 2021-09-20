@@ -36,7 +36,7 @@
   <!-- javascript -->
   <script>
     // 자료형 -> 자료의 구조를 파악하는 방법: typeof( 값 )    
-    // 기본형 : 숫자,문자,논리,정의
+    // 기본형 : 숫자,문자,논리,undefined,null
     var n = -10.523;
     console.log('n:', n, typeof(n) );
 
@@ -52,10 +52,62 @@
     var num = !10;  // 숫자-> 부정(아니다) -> 부정(참)
     console.log('num:', num,  typeof(num) );
     console.log( num === true ); // = 대입, === 비교하여 결과를 참/거짓
-
-
+    
+    var und;
+    console.log( und, typeof(und) );
+    und = 10;
+    console.log( und, typeof(und) );
+    und = undefined;
+    console.log( und, typeof(und) );
+    
+    
+    var nul;
+    console.log( nul, typeof(nul) );
+    nul = 10;
+    console.log( nul, typeof(nul) );
+    nul = null;
+    console.log( nul, typeof(nul) );
+    nul = 0;
+    console.log( nul, typeof(nul) );
+    
     // ------------------------------------------
-    // 특수형 : 객체,함수
+    // 객체형 : 객체(object,array), 함수
+    
+    var obj = {};
+    console.log( obj, typeof(obj) );
+    // console.log( obj.constructor === Object );    
+    
+    var arr = [];
+    console.log( arr, typeof(arr) );
+    // console.log( arr.constructor === Array );
+    
+    var fn = function(){};
+    console.log( fn , typeof(fn) );
+    // console.log( fn.constructor === Function );
+    console.clear();
+    // -------------------------------------------
+
+    // Object
+    var obj2 = {
+      'apple':'iphone 13',
+      'samsung':'z flip2',
+      'ms':'suffice fold',
+    };
+    console.log( obj2.apple );
+
+    var arr2 = ['apple','samsung','ms','google'];
+    console.log( arr2[0] );
+
+    var fn2 = function(a){
+      return a*a;
+    };
+    
+    console.log( fn2('a') );
+    console.log( fn2(5) );
+    console.log( fn2(20) );
+    console.log( typeof fn2('a') );
+    // NaN - 숫자내용이 아닙니다. typeof(NaN)  -> number
+
 
   </script>
 </body>
