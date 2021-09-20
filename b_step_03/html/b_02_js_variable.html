@@ -84,7 +84,17 @@
     console.log(xidoLocation);
     xidoLocation = '제주도';
     console.log(xidoLocation);
+    //---------------------------------
 
+    // window 내부에 document 내부에 클래스이름이 ex_wrap의 첫번째(0) 가져와서 처리
+    // 내부 -> .
+    // class -> className()
+    // 순서 -> [n] : 첫번째를 0, 두번째를 1, 세번째는 2
+
+    var exWrap = document.getElementsByClassName('ex_wrap')[0];
+    var codeInner = '<span>' + xidoLocation + '</span>';
+    // exWrap.innerText = codeInner;
+    exWrap.innerHTML  = codeInner;
     
   </script>
 </body>
