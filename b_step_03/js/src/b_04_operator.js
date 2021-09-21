@@ -124,3 +124,31 @@ console.log( ck1 );
 
 var ck2 = true || true;
 console.log( ck2 );
+
+console.clear();
+// -------------------------------------
+// 삼항연산자->    조건 ? true일때 결과 : false일때 결과 ;
+
+var k = 20;
+var kRel;
+
+(k <= 10) ? kRel = '숫자가 10보다 큰 숫자' : kRel = '숫자가 10보다 작은 수' ;
+console.log( kRel );
+
+//---------------------------------------
+// 버튼-> id="btn"
+// 클릭? -> 이벤트 -> addEventListener('이벤트명');
+// .content 내용을 변경 ->  ?.innerText = "내용"
+
+// #btn -> getElementById('아이디이름')
+// .content => getElementsByClassName('class이름);
+var btn = document.getElementById('btn');
+var par = document.getElementsByClassName('content')[0];
+var i = 0;
+
+btn.addEventListener('click', function(){
+  i += 1;
+  par.innerText = "내용이 변경," + i + "번 클릭";
+})
+
+// --------------------------------------
