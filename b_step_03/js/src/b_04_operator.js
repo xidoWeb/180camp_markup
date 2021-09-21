@@ -100,6 +100,27 @@ n--;
 n--;
 n--;
 n--;
-console.log('n:', n );
+console.log('n:', n ); 
 console.log('n:', n-- );
 console.log('n:', n );
+
+console.clear();
+// -------------------------------------
+// 비교 연산자 > (왼쪽값 비교 오른쪽값) 결과 true/false
+
+var m = 30;
+var rel = n <= m;
+console.log('n:' + n , 'm:' + m, 'result:' + rel);
+
+rel = n >= m;
+console.log('n:' + n , 'm:' + m, 'result:' + rel);
+
+var n2 = '4';
+var nCk = n === n2;
+console.log( n, n2, nCk );
+
+var ck1 = true && false;
+console.log( ck1 );
+
+var ck2 = true || true;
+console.log( ck2 );
