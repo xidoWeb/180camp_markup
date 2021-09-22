@@ -44,3 +44,26 @@ console.log('arr: ', arr );
 console.log('copyArr: ',  copyArr );
 
 
+console.clear();
+// --------------------------------------
+
+var idx = 0;
+var nArr = [idx];
+nArr[1] = idx;
+nArr[11] = ['a','b','c'];
+console.log( nArr );
+console.log( nArr[11] );
+var nArrGroup = nArr[11];
+console.log( nArrGroup[2] );
+console.log( nArr[11][2] );
+
+var ar_01 = ['a','c','f'];
+var ar_02 = ['0','ar','ccf',[1,2,3]];
+var ar3 = [10, 7, 6, 3, ar_01, ar_02];
+
+console.log( ar3[4][2] );
+// console.log( ar_01[2] );
+console.log( ar3[5][3][0] );
+console.log( ar_02[3][0] );
+
+
