@@ -66,4 +66,48 @@ console.log( ar3[4][2] );
 console.log( ar3[5][3][0] );
 console.log( ar_02[3][0] );
 
+console.clear();
+// ---------------------------------
+var obj = {
+  'coffee':'americano',
+  'juice':[
+    'grape', 
+    'apple',
+    'orange', 
+    {
+      'ade':'lemon',
+      'slush':'milk'
+    }]
+};
 
+console.log( obj.coffee );
+console.log( obj['coffee'] );
+console.log( obj.juice[2] );
+console.log( obj.juice );
+console.log( obj.juice[3] );
+console.log( obj.juice[3].slush );
+console.log( obj.juice[3]['slush'] );
+
+
+// 
+// 카드리스트
+//  이미지:이미지명, 제목:제목내용, 내용:설명, 링크:링크주소, 옵션: 인기/최신/추천
+var cardList = [
+  {img: 'img.png',
+  title: 'title content',
+  content: ['content', 'content2'],
+  ankder : 'linkData',
+  option: ['best', 'new' ]},
+  {img: 'img.png',
+  title: 'title content',
+  content: ['content', 'content2'],
+  ankder : 'linkData',
+  option: ['best', 'new' ]},
+  {img: 'img.png',
+  title: 'title content',
+  content: ['content', 'content2'],
+  ankder : 'linkData',
+  option: ['best', 'new' ]}
+];
+
+console.log( cardList[0].option[1] )
