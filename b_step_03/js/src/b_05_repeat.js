@@ -57,3 +57,28 @@ for(o=0; o < fruits.length ; o+=1){
 
 console.clear();
 // ------------------------------------
+// .ex_wrap       -> getElementsByClassName('ex_wrap')[];
+// .ex_wrap > ul  -> getElementsByTagName('ul');
+// li요소를 삽입    -> innerHTML 생성후 추가 요소는 삽입이 불가능 x -> append
+
+// 라면만들기 : 라면박스 - 라면봉투생성(createElement) - 필요구성을 정리 - 박스에 담기
+
+var exWrap = document.getElementsByClassName('ex_wrap')[0];
+// console.log(exWrap);
+var exUl = exWrap.getElementsByTagName('ul')[0];
+// console.log(exUl);
+/*
+  var makeLi = document.createElement('li');
+  makeLi.innerText = fruits[0];
+  exUl.append(makeLi);
+*/
+
+var makeLi;
+var fruitsLength = fruits.length;
+var liLen = 0;
+
+for( ; liLen < fruitsLength; liLen+=1 ){
+  makeLi = document.createElement('li');
+  makeLi.innerText = fruits[liLen];
+  exUl.append(makeLi);
+}
