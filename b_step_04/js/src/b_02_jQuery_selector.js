@@ -69,7 +69,23 @@ var olEq5 = boxOl_li.eq(4);
 boxOl_li.not( olEq5 ).css({ 'textAlign' : 'right' });
 
 // ---------------------------------------------------------
- 
+var box2 = $('#box');
+var box2_other = box2.children('.other_list');
+var box2_li = box2_other.children('li');
+
+// box2_li.eq(2).css({'backgroundColor':'#7af'});
+
+var other = $('#other');
+other.css({'backgroundColor':'#7af'});
+other.children('button').css({color:'#fff', 'fontWeight':'900' });
+other.parent().css({ 'backgroundColor':'#dfa', 'borderRadius':'30px' });
+other.parent().parent().css({ 'padding': '30px', 'borderRadius':'20px'});
+other.parents('.code_exam').css({ border:'2px dotted #f00'});
+
+other.css({'transform':'rotate(45deg)'});
+other.animate({'marginLeft': '200px'});
+//  jQuery.animate() 메소드 동작하지 않는 것들 : 
+//  - transition, animation, transform, borderRadius
 
 
 })(jQuery);
