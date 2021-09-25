@@ -34,6 +34,42 @@ var boxFindH3 = box.find('h3');
 boxFindH3.css({ 'color': '#f05'});
 
 // 메소드체인:  선택자.메소드().메소드().....
+// ----------------------------------------------------------
+// 선택자
+var boxP = box.children('p');
+box.children('ol').addClass('list_wrap');
+var boxList = box.find('.list_wrap');
+
+boxP.css({'backgroundColor' : '#fff', 'marginBottom': '10px'});
+boxList.css({'border': '1px solid #555', 'margin':'10px 0' });
+// ---------------------------------------------------------------
+// 선택자에 순서를 가르키는 것 -> eq(순번)  : 순번은 첫번째가 0
+
+boxList.eq(0).css({ 'backgroundColor' : '#fff', 'padding': '10px'});
+boxList.eq(1).css({ 'backgroundColor' : '#ddf', 'padding': '15px' });
+boxList.eq(2).css({ 'backgroundColor' : 'rgba(255, 255, 255, 0.3)', 'padding': '10px' });
+
+// --------------------------------------------------------------------
+var boxListEq_01 = boxList.eq(0);
+// $('#box').children('.list_wrap').eq(0).children('li')
+var boxUl_01_li = boxListEq_01.children('li');
+
+boxUl_01_li.eq(0).next().css({'backgroundColor':'#dd7'}); 
+boxUl_01_li.eq(0).nextAll().css({'color':'#f06'});
+boxUl_01_li.eq(-2).css({'fontSize':'1.4rem'});
+boxUl_01_li.eq(-2).prev().css({'textIndent':'30px'});
+boxUl_01_li.eq(-2).prevAll().css({'textTransform':'uppercase'});
+
+var boxOl_li = boxList.eq(-1).children('li');
+boxOl_li.css({'color':'#03a'});
+boxOl_li.eq(5).css({'fontSize':'1.4rem'});
+boxOl_li.eq(5).siblings().css({'fontWeight':700, 'color':'#f06'});
+
+var olEq5 = boxOl_li.eq(4);
+boxOl_li.not( olEq5 ).css({ 'textAlign' : 'right' });
+
+// ---------------------------------------------------------
+ 
 
 
 })(jQuery);
