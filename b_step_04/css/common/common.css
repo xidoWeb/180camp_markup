@@ -14,7 +14,7 @@
 /* 코드 예제 세팅 */
 
 .code_exam {
-  width: 1200px; height:auto; min-height:1000px;
+  width: 90%; min-width:600px; height:auto; min-height:1000px;
   margin:auto; padding:20px; box-sizing: border-box;
   /* background-color: #eee; */
 }
