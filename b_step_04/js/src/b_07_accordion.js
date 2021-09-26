@@ -22,24 +22,40 @@
   accorDt.on('click', function(e){
     e.preventDefault();
     // console.log( $(this).text() )
+// -------------------------------------------------------    
     // 1. 선택한 dt 이후에오는 dd를 나타나게 하자
     var _this = $(this);
-    _this.nextAll(accorDd).slideDown();
-
+    // 5번 조건문에 의해 주석
+    // _this.nextAll(accorDd).slideDown();
+// -------------------------------------------------------
     // 2. 선택한 dt 의 부모의 다른형제의 자식인 dd를 사라지게하자.
     // 3번과 중복이라 주석
     // $(this).parent().siblings(accorDl).find(accorDd).hide();
-
+// -------------------------------------------------------
     // 3. 선택한 dt의 부모의 순서
     var i = _this.parent().index();
-    console.log( i );
+    
     //3-1. 파악된 순서를 제외한 dl의 내부에존재하는 dd사라지게
-    accorDl.eq(i).siblings().find('dd').slideUp();
-
+    //5번의 조건문에 의해 주석
+    // accorDl.eq(i).siblings().find('dd').slideUp();
+// -------------------------------------------------------
     // 4. 선택한 dt에 클래스 삽입
-    accorDl.eq(i).addClass('on');
-    accorDl.eq(i).siblings().removeClass('on');
-
+    // 5번기능으로 내용 주석
+    // accorDl.eq(i).addClass('on');
+    // accorDl.eq(i).siblings().removeClass('on');
+// -------------------------------------------------------
+    // 5. class유무 파악후 추가 기능을 설정
+    var dlI = accorDl.eq(i);
+    // class기능의 유무 hasClass('className') -> t/f
+    if( dlI.hasClass('on') ){
+      accorDl.removeClass('on');
+      dlI.find('dd').stop().slideUp();
+    }else{      
+      dlI.addClass('on');
+      dlI.siblings().removeClass('on');
+      _this.nextAll(accorDd).stop().slideDown();
+      dlI.siblings().find('dd').stop().slideUp();
+    }
 
   });
 
