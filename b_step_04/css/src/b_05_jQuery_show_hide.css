@@ -17,6 +17,8 @@
   background-position: 50% 50%;
 }
 
+.action_view { display:block; }
+
 .btn {
   margin-top: 1rem; 
 }
