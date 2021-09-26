@@ -147,32 +147,89 @@
 
 /* #bestBox 
     ====================================================  */
-  #bestBox { 
-    height:auto; min-height: 43.75rem;
-    padding: 2.5rem; padding-bottom: 8.75rem; 
-  }
+    #bestBox { 
+      position: relative; 
+      height:auto; min-height: 43.75rem;
+      padding:0; padding-bottom: 12.5rem; 
+    }
+    
+    #bestBox .area {
+       
+      width: 300px; min-width: auto; height:auto; }
+    .best_area {
+      float:none; 
+      width: 100%; height: auto; margin-bottom: 54px;}
+    .best_area h2{height: auto;}
+    .best_area p{height: auto;}
+    
+    .best_btn { display: none;}
+    .more_btn {
+      position: absolute; bottom:90px; left: 50%; 
+      width: 140px;
+      transform: translateX(-50%);
+    }
+    .best_card_list { float:none; width: 100%; height: auto;}
+    .best_card_list ul {width: 100%;}
+    .best_card_list li:first-child,
+    .best_card_list li {float:none; margin:auto; margin-bottom:60px; }
+    .best_card_list li:nth-child(n+4) { display:none; }
+    .best_card_list li:hover { transform: scale(1);}
 
 /* #galleryBox 
     ====================================================  */
-  #galleryBox {  
-    height:auto; min-height: 61.25rem; 
-    padding-top: 1.5rem; padding-bottom: 8.75rem;
-  }
-
-  #galleryBox .area_content {
-    width: 100%;
-  }
+    #galleryBox {  
+      height:auto; min-height: 61.25rem; 
+      padding-top: 1.5rem; padding-bottom: 8.75rem;
+    }
+    #galleryBox .area_title { text-align: center; }
+    #galleryBox  .area_content {
+      width:300px;
+    }
+    .gallery_main_content  {
+      float:none; width:100%;
+      margin:auto;  margin-bottom: 20px;
+    } 
+    #galleryBox   .gallery_list {
+      float:none; position: static;
+      width: 100%; height: auto;
+      margin:auto;
+    }
+    
+    .gallery_list li {  width: 100%;}
+    
 
 /* #sponsorBox 
     ====================================================  */
-  #sponsorBox { 
-    height: 25rem;
-  }
+    #sponsorBox { height: 25rem; }
+
+    #sponsorBox h2 {
+      position: static;
+      width: 100%; height: auto; 
+      margin-bottom: 20px; padding-top: 40px;
+      font-size:28px; font-weight: 700;
+      text-align: center;
+    }
+    
+    .sponsor_area {
+      overflow: hidden;
+      width: 300px; height:270px;   
+      padding:0 10px;
+    }
+    .sponsor_area ul {
+      width:100%; height: auto; 
+    }
+    .sponsor_area li {
+      float:left; width: 140px; height: 80px; 
+      padding:10px 0; 
+      margin-right:20px;
+    }
+    .sponsor_area li:nth-child(2n){margin-right: 0;}
 
 /* #footBox 
     ====================================================  */
-  #footBox { height: 26.5625rem; }
-  #footBox > * {display: none;}
-
+    #footBox { height: 26.5625rem; }
+    .info_logo { margin:auto; margin-bottom: 50px;}
+    .company_content { width: 0; height: 0; overflow: hidden;}
+    .social_family {float:none; width: 160px; height:auto; margin: auto;}
 /* =========================================== */
 } /* @media screen and (max-width:37.4375rem) */
