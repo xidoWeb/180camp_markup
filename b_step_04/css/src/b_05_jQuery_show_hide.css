@@ -1,6 +1,6 @@
 /* b_05_jQuery_show_hide.css */
 
-
+.code_exam {min-width:800px;}
 .img_viewer {
   width: 100%; height: 400px; 
   padding:5px; box-sizing: border-box;
