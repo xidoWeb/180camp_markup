@@ -53,4 +53,62 @@
     $(this).removeAttr('style');
   });
 
+  // ---------------------------------------
+  // focus 초점을 맞출때
+
+  evtLi.eq(5).children('a').on('focus', function(){
+    exInnerText.text('포커스 처리되었습니다.');
+    $(this).css({backgroundColor:'#ccc'})
+  });
+  evtLi.eq(5).children('a').on('blur', function(){
+    exInnerText.text('포커스가 빠져 나갔습니다.');
+    $(this).removeAttr('style');
+  });
+
+  // ---------------------------------------
+  // scroll 움직일경우
+  var win = $(window);
+  win.on('scroll', function(){
+    var scrollCk = parseInt(win.scrollTop());
+    console.log( scrollCk );
+
+    if(scrollCk >= 500){
+      $('body').css({backgroundColor:'#fda'});
+    }else{
+      $('body').removeAttr('style');
+    }
+  });
+
+  evtLi.eq(6).on('click', function(e){
+    e.preventDefault();
+    // win.scrollTop(600);
+    $('html').animate({ scrollTop: 600+'px' });
+  });
+// --------------------------------------------
+// resize 브라우저 사이즈 변경
+
+ win.on('resize', function(e){
+   var winW = $(this).width();
+   if(winW >= 1024){
+     $('body').stop().animate({ backgroundColor : '#add'}, 300);
+   }else{
+     $('body').stop().animate({backgroundColor:'transparent'}, 300);
+   }
+ });
+
+ // ---------------------------------------
+ evtLi.on('mouseenter', function(){
+  $(this).css({'border': '1px solid #333'});
+ });
+ evtLi.on('mouseleave', function(){
+   $(this).removeAttr('style');
+ })
+
+
+ // 이벤트
+ // click, dblclick, mouseenter, mouseleave, foucs, blur, scroll, resize
+ // window, document, $(this)
+
+
+
 })(jQuery); 
