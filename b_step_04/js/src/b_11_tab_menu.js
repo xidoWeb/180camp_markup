@@ -39,7 +39,35 @@
     tabMenuFn(2);
     console.log(tabMenuSet);
 
-  
+  // --------------------------------------------------
+
+  // 기능 설명
+  // 1. 선택된 버튼의 순서를 파악
+  // 2. 선택된 버튼의 내용에 맞는 구성을 설정
+
+
+  // 변수
+  var tabArea  = $('.tab_area');
+  var tabTitle =  tabArea.find('.tab_title');
+  var tabTLi   = tabTitle.find('li');
+  var tabBtn   = tabTLi.find('button');
+  var tabContent = tabArea.find('.tab_content');
+  var tabConMenu = tabContent.find('.tab_list');
+
+
+  // 이벤트
+  tabBtn.on('click', function(e){
+    e.preventDefault();
+    var i = $(this).parent().index();
+
+    tabBtn.parent().eq(i).addClass('on');
+    tabBtn.parent().eq(i).siblings().removeClass('on');
+
+
+    tabConMenu.text( 'tab 구성' + (i+1) );
+  });
+
+
 
   }); // $.ajax()
 })(jQuery);
