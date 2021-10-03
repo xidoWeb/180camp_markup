@@ -8,7 +8,13 @@
 .first_margin > li:first-child { margin-left: 0; }
 .last_margin > li:last-child { margin-right: 0; }
 
-.blind {  display:block; position: absolute; z-index:-1; width:0; height:0; overflow: hidden; }
+.blind {  
+  display:block; 
+  position: absolute; z-index:-1; 
+  width:0; height:0; 
+  clip:rect(0 0 0 0);
+  margin: -1px;
+  overflow: hidden; }
 
 
 /* 코드 예제 세팅 */
