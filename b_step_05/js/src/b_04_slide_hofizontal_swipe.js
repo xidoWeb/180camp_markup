@@ -12,6 +12,7 @@ var originDivLen = horizontalDiv.length;
 
 var i = 0;
 var permission = true;
+var startX, endX;
 
 // 함수 -----------------------------------------
 var nextSwipeFn = function(){
@@ -55,7 +56,25 @@ newHorizontalDiv.css({width:(100 / newDivLen) + '%'});
 
 // 이벤트 --------------------------------------
 slideSet.on('touchstart', function(e){
-  console.log(e);
+  startX = parseInt(e.originalEvent.changedTouches[0].clientX);
 });
+
+slideSet.on('touchend', function(e){
+  endX = parseInt(e.originalEvent.changedTouches[0].clientX);
+  var resultX = startX - endX;
+  if(resultX > 100){
+    nextSwipeFn();
+  }else if(resultX < -100){
+    prevSwipeFn();
+  }
+});
+
+// slideSet.on('touchmove', function(e){
+//   console.log(e);
+// });
+
+// screenX, screenY -> 모니터의 좌표
+// clientX, clientY -> 보이는 화면(브라우저의 보이는 그 자체)
+// pageX, pageY -> 스크롤값을 포함한 브라우저 좌표
 
 })(jQuery);
