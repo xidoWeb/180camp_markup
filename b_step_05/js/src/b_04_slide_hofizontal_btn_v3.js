@@ -18,6 +18,9 @@ var indiArea = slideSet.find('.indicator');
 var indiUl = indiArea.children('ul');
 var indiLi = indiUl.children('li');
 var iniLink = indiLi.children('a');
+var indiP  = indiArea.find('p');
+var nowI = indiP.find('.now');
+var nowT = indiP.find('.total');
 
 var horizontal = slideSet.find('.horizontal_slide');
 var horizontalDiv = horizontal.children('div');
@@ -60,6 +63,11 @@ var indicatorFn = function(){
   indiLi.eq(i).siblings().removeClass('action');
 }; // indicatorFn()
 
+var nowIFn = function(){
+  nowT.text(originDivLen);
+  nowI.text(i+1);
+}; // nowIFn();
+
 // 기능수행(수행 및 체크) -----------------------------------------
 var cloneDiv = horizontalDiv.eq(-1).clone();
 horizontal.prepend(cloneDiv);
@@ -70,17 +78,21 @@ var newDivLen = newHorizontalDiv.length;
 horizontal.css({width:(100 * newDivLen) + '%', left: -100 +'%'});
 newHorizontalDiv.css({width:(100 / newDivLen) + '%'});
 
+nowIFn();
+
 // 이벤트 -----------------------------------------
 nextBtn.on('click', function(e){
   e.preventDefault();
   nextBtnFn();
   indicatorFn();
+  nowIFn();
 }); // nextBtn.on('click')
 
 prevBtn.on('click', function(e){
   e.preventDefault();
   prevBtnFn();
   indicatorFn();
+  nowIFn();
 });// prevBtn.on('click')
 
 iniLink.on('click', function(e){
@@ -88,6 +100,7 @@ iniLink.on('click', function(e){
   i = $(this).parent().index();
   horizontal.stop().animate({marginLeft: -100 * i +'%'});
   indicatorFn();
+  nowIFn();
 });
 
 })(jQuery);
