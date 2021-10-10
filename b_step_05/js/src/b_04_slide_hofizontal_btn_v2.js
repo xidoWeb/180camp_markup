@@ -18,7 +18,39 @@ var horizontal = slideSet.find('.horizontal_slide');
 var horizontalDiv = horizontal.children('div');
 var originDivLen = horizontalDiv.length;
 
+var permission = true;
+var i = 0;
+
 // 함수 -----------------------------------------
+var nextBtnFn = function(){
+  if(permission){
+    permission = false;
+    i += 1;
+    if(i >= originDivLen){
+      horizontal.css({marginLeft: 100+'%' });  
+      i = 0;
+    }
+    horizontal.stop().animate({marginLeft: -100 * i +'%'}, function(){
+      permission = true;
+    });    
+  }// if(permission)
+}; // nextBtnFn();
+
+var prevBtnFn = function(){
+  if(permission){
+    permission = false;
+    i -= 1;
+    horizontal.stop().animate({marginLeft: -100 * i +'%'}, function(){
+      if(i < 0) {
+        i = originDivLen - 1;
+        horizontal.css({marginLeft: -100 * i +'%'});
+      }
+      permission = true;
+    });
+  }// f(permission)
+};// prevBtnFn()
+
+
 
 // 기능수행(수행 및 체크) -----------------------------------------
 var cloneDiv = horizontalDiv.eq(-1).clone();
@@ -28,7 +60,16 @@ var newDivLen = newHorizontalDiv.length;
 horizontal.css({width:(100 * newDivLen) + '%', left: -100 +'%'});
 newHorizontalDiv.css({width:(100 / newDivLen) + '%'});
 
-
 // 이벤트 -----------------------------------------
+nextBtn.on('click', function(e){
+  e.preventDefault();
+  nextBtnFn();
+}); // nextBtn.on('click')
+
+prevBtn.on('click', function(e){
+  e.preventDefault();
+  prevBtnFn();
+});// prevBtn.on('click')
+
 
 })(jQuery);
