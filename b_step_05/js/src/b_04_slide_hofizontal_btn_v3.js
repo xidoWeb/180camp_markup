@@ -9,6 +9,8 @@
  */
 
 // 변수 -----------------------------------------
+var part = $('.part');
+
 var slideSet = $('.slide_set');
 var btnArea = slideSet.find('.slide_btn');
 var nextBtn = btnArea.find('.next');
@@ -26,8 +28,12 @@ var horizontal = slideSet.find('.horizontal_slide');
 var horizontalDiv = horizontal.children('div');
 var originDivLen = horizontalDiv.length;
 
+// ---------------------------------------------
+
 var permission = true;
 var i = 0;
+var timed = 1000;
+var play;
 
 // 함수 -----------------------------------------
 var nextBtnFn = function(){
@@ -68,6 +74,20 @@ var nowIFn = function(){
   nowI.text(i+1);
 }; // nowIFn();
 
+// 일정 시간 마다 동작 /  강제로 조건에의해 해제
+var slideGoFn = function(){
+  play = setInterval(function(){
+    nextBtnFn();
+    indicatorFn();
+    nowIFn();    
+    // nextBtn.trigger('click');
+  }, timed*3 );
+};
+
+var slideStopFn = function(){
+  clearInterval(play);
+};
+
 // 기능수행(수행 및 체크) -----------------------------------------
 var cloneDiv = horizontalDiv.eq(-1).clone();
 horizontal.prepend(cloneDiv);
@@ -79,6 +99,7 @@ horizontal.css({width:(100 * newDivLen) + '%', left: -100 +'%'});
 newHorizontalDiv.css({width:(100 / newDivLen) + '%'});
 
 nowIFn();
+slideGoFn();
 
 // 이벤트 -----------------------------------------
 nextBtn.on('click', function(e){
@@ -101,6 +122,14 @@ iniLink.on('click', function(e){
   horizontal.stop().animate({marginLeft: -100 * i +'%'});
   indicatorFn();
   nowIFn();
+});
+
+part.on('mouseenter', function(){
+  slideStopFn();
+});
+
+part.on('mouseleave', function(){
+  slideGoFn();
 });
 
 })(jQuery);
