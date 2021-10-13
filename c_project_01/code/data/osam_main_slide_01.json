@@ -33,7 +33,7 @@
     "image": "new_tumbler.png",
     "description": "new_tumbler",
     "image_use": "hidden",
-    "background": "light.bg_png"
+    "background": "light_bg.png"
   },
   {
     "id": 4,
