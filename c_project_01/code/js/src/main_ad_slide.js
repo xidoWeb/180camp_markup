@@ -17,6 +17,8 @@ jsonData.done(function(data){
   console.log( slideData );
   var dataLen = slideData.length;
   var viewBox = $('#viewBox');  
+  var viewCover;
+  var setNum = 0;
 
   // 기능구현1
   var slideWrapperSet = '<div class="slide"><div class="slide_wrapper"></div></div>';
@@ -28,8 +30,8 @@ jsonData.done(function(data){
   // 함수
   var slideBtn = function(){
     var insertBtn = '<div class="slide_btn blind_area"><button type="button" class="next"><span>다음 내용 보기</span><i class="fas fa-chevron-right"></i></button><button type="button" class="prev"><i class="fas fa-chevron-left"></i><span>이전 내용 보기</span></button></div>';
-    slideWrapperCode.prepend( insertBtn );
-  };
+    slideWrapperCode.before( insertBtn );
+  };// slideBtn();
 
 
   var slideDivSetFn = function(n){
@@ -59,21 +61,79 @@ jsonData.done(function(data){
     imgCaption.text(slideN.description);
     imgContent.text(slideN.summary);
 
-  };
+  }; // slideDivSetFn()
 
-var actionFn = function(i){
-  var viewCover = $('.view_cover');
-  viewCover.eq(i).addClass('action');
-};
-
+    var actionFn = function(i){
+      viewCover = $('.view_cover');
+      viewCover.eq(i).addClass('action');
+    };// actionFn();
 
   var i = 0;
   for(; i<dataLen; i+=1){
     slideDivSetFn(i);
   }
 
-  actionFn(3);
+
+  actionFn(setNum);
   slideBtn();
+  // ---------------------------------------------------------------------
+  // 인디케이터 생성
+  console.log(viewCover);
+  // 설명
+  /**
+   * = 광고갯수를 파악하여 인디케이터를 생성
+   * - 해당하는 순서에맞는 인디케이터에 action을 설정하여, 인지할 수 있도록
+   */
+  // 담을 코드 작성
+  var indiWrapper =  '<div class="slide_check_part">\
+                      <ul class="slide_indicator blind_area"></ul>\
+                      <p><em class="now_view"></em> / <span class="total_view"></span></p>\
+                      </div>';
+  var indiCode = '<li><a href="#" data-href="#"><span></span></a></li>';
+  
+  // 기능설정1 + 변수
+  slideWrapperCode.before(indiWrapper);
+  var slideCheckPart = viewBox.find('.slide_check_part');
+  var indiWrappSelector = viewBox.find('.slide_indicator');
+  var viewLenCkNow = slideCheckPart.find('.now_view');
+  var viewLenCkTotal = slideCheckPart.find('.total_view');
+  var indiSelector;
+
+  // 함수
+  var indicatorSetFn = function(n){
+    indiWrappSelector.append(indiCode);
+
+    indiSelector = indiWrappSelector.find('li');
+    var indiLiLink = indiSelector.eq(n).find('a');
+    var indiLiSpan = indiLiLink.children('span');
+
+    indiLiLink.attr({'data-href':'.'+slideData[n].description});
+    indiLiSpan.text(slideData[n].summary);
+  };// indicatorSetFn(n)
+
+  var indicatorCheckFn = function(n){
+    viewLenCkNow.text(n+1);
+    viewLenCkTotal.text(dataLen);
+  }; // indicatorCheckFn(n);
+
+  // indicator 생성
+  var j = 0;
+  for( ; j < dataLen; j+=1 ){    
+    indicatorSetFn(j);
+  }
+
+
+  indicatorCheckFn(setNum);
+  indiSelector.eq(setNum).addClass('action');
+
+  // 슬라이드광고, indiSelector, 체크번호 모두 동시에 처리되어야 하는 기능으로 한번에 수행
+  var actionNumSetFn = function(n){
+    actionFn(n);
+    indicatorCheckFn(n);
+    indiSelector.eq(n).addClass('action');
+  };// actionNumSetFn(n);
+
+
 
 // $ajax ---------------------------------------------------
 });
