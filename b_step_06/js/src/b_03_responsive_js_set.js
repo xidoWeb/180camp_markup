@@ -8,10 +8,9 @@
    * - 기존 크기를 확인 및 디바이스크기 기준 디바이스를 설정
    * - 브라우저 크기가 변경되면 변경된 크기를 파악하여, 기존 디바이스환경과 비교하여 다른 환경일경우 변경할 처리를 체크
    */
-
   var jsonData = '../data/device_type.json';
   $.getJSON(jsonData, function(data){
-    console.log( data );
+    // console.log( data );
     var deviceGuide = data;
   
     // 변수
@@ -19,18 +18,7 @@
     var winW = win.width();
     var checkType;
 
-    // if(winW >= deviceGuide[3].size){
-    //   checkType = deviceGuide[3].type;
-    // }else if(winW >= deviceGuide[2].size){
-    //   checkType = deviceGuide[2].type;
-    // }else if(winW >= deviceGuide[1].size){
-    //   checkType = deviceGuide[1].type;
-    // }else{
-    //   checkType = deviceGuide[0].type;
-    // }
-    
-    
-    
+
     // 함수
     var deviceCheckFn = function(){
       var guideLen = deviceGuide.length;
@@ -44,19 +32,19 @@
         }
       }
       // console.log(checkType);
-      return checkType;
+      return $.CheckType = checkType;
     }; // deviceCheckFn();
   
     var beforeDevice = deviceCheckFn();
-    console.log(beforeDevice);
+    // console.log(beforeDevice);
 
     // 이벤트
     win.on('resize', function(){
       winW = win.width();
       var afterDevice = deviceCheckFn();
-      if(beforeDevice !== afterDevice){
-        console.log(afterDevice);        
+      if(beforeDevice !== afterDevice){     
         beforeDevice = afterDevice;
+        location.reload();
       }
     });
 
