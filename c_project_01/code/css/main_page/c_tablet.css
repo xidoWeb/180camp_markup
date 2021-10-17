@@ -71,7 +71,7 @@
 
 /* #slideBox 
   ============================================ */
-  #slideBox   { 
+  .slide_set   { 
     min-height:25rem; 
     max-height:75rem;
     padding-top: 3.125rem;
