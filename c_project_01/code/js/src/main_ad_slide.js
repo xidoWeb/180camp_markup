@@ -16,7 +16,7 @@ jsonData.done(function(data){
   var sldeType = 'position_slide';
   // console.log( slideData );
   var dataLen = slideData.length;
-  var viewBox = $('#viewBox');  
+  var viewBox = $('.slide_set');  
   var viewCover;
   var setNum = 0;
   var beforeN = setNum;
