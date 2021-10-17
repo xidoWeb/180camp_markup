@@ -17,13 +17,34 @@
 var win = $(window); // $(document)
 var beforeW = win.width();
 // console.log(beforeW);
+var deviceSize = 1024;
+var deviceType = ['pc', 'hand helds'];
+var beforeDeviceType;
+var nowDeviceType;
+
+// 함수
+var deviceCheckFn = function(nowWidth){
+  if(nowWidth >= deviceSize){
+    nowDeviceType = deviceType[0];
+  }else{
+    nowDeviceType = deviceType[1];
+  }
+  // console.log(nowDeviceType, nowWidth);
+  return nowDeviceType;
+};// deviceCheckFn(nowWidth)
+
+beforeDeviceType = deviceCheckFn(beforeW);
 
 // 이벤트
 win.on('resize', function(){
-  // console.log('브라우저 사이즈가 변화했습니다.');
   var afterW = win.width();
-  if(beforeW !== afterW){
-    console.log(beforeW, afterW);
+  deviceCheckFn(afterW);
+
+  if(beforeDeviceType !== nowDeviceType){
+    console.log( '디바이스 환경이 변화 되었습니다.' );
+    console.log( beforeDeviceType, ' : ' , nowDeviceType);
+    beforeDeviceType = nowDeviceType;
+    beforeW = afterW;
   }
 }); 
 
