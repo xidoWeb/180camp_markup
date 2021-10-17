@@ -16,20 +16,25 @@
 // 변수
 var win = $(window); // $(document)
 var beforeW = win.width();
-// console.log(beforeW);
+
 var deviceSize = 1024;
 var deviceType = ['pc', 'hand helds'];
 var beforeDeviceType;
 var nowDeviceType;
 
+var exWrap = $('.ex_wrap');
+var baseUrl = '../page/rwdHtml/';
+var deviceHtml = ['pc.html', 'handhelds.html'];
+
 // 함수
 var deviceCheckFn = function(nowWidth){
   if(nowWidth >= deviceSize){
     nowDeviceType = deviceType[0];
+    exWrap.load(baseUrl + deviceHtml[0]);
   }else{
     nowDeviceType = deviceType[1];
+    exWrap.load(baseUrl + deviceHtml[1]);
   }
-  // console.log(nowDeviceType, nowWidth);
   return nowDeviceType;
 };// deviceCheckFn(nowWidth)
 
@@ -41,6 +46,8 @@ win.on('resize', function(){
   deviceCheckFn(afterW);
 
   if(beforeDeviceType !== nowDeviceType){
+    // location.reload();
+
     console.log( '디바이스 환경이 변화 되었습니다.' );
     console.log( beforeDeviceType, ' : ' , nowDeviceType);
     beforeDeviceType = nowDeviceType;
