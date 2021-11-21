@@ -20,13 +20,12 @@
     /* tab menu title 설정 -------------------------------------- */
     // 배열.filter(function(data, index){});
     // indexOf() : 문자열/배열 에서 작성한 요소와 일치하는 순서를 파악
-
     // 중복되는 배열의 값을 정리해주는 기능
     var tabTitleCheck = tabTitle.filter(function(data,index){
       return tabTitle.indexOf(data) === index;
     });    
     // console.log(tabTitleCheck);
-
+    
     /* tab menu 내용 구성에 맞는 목록 체크 ----------------------- */
     var tabMenuSet;
     var tabMenuFn = function(n){
@@ -34,8 +33,9 @@
         return data.type === tabTitleCheck[n];
       });
     }
-    // tabMenuFn(0);
-    // console.log(tabMenuSet);
+    
+    tabMenuFn(1);
+    console.log(tabMenuSet);
 
     // title 구성 : tabTitleCheck
     // title에 따른 메뉴 구성 : 함수 호출 -> tabMenuFn(순서);
@@ -72,7 +72,7 @@
   var tabMenuSetFn = function(k){
     tabMenuFn(k);
     tabConMenu.empty();
-    console.clear();
+    // console.clear();
     console.log( tabMenuSet );
     var tabListSet = '<li><div class="img_con"><span></span></div><dl><dt></dt><dd class="text_con"></dd><dd class="link_con"><a href="#">자세히보기</a></dd></dl></li>';
 
