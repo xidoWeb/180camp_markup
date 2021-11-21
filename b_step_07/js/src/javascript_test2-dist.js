@@ -1,0 +1,1 @@
+const nav=document.querySelector(".navigation");let per=100;nav.style.width=per+"%";let intervalAni=setInterval((function(){per-=1,per>=50?nav.style.width=per+"%":clearInterval(intervalAni)}),16);const wrap=$("#wrap"),makeP=document.createElement("p");wrap.append(makeP);
