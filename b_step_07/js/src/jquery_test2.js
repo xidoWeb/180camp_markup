@@ -31,9 +31,18 @@ var b = 'my name is';
 var c = 'xido';
 
 console.log( a + '. ' + b + ' ' + c + ' ' +'studio');
+console.clear();
 
+// ----------------------------------------------
+// 외부 json data 불러오기
 
-
+$.ajax({
+  url:'../data/data.json'
+}).done(function(data){
+  // console.log( data );
+  var dataList = data;
+  console.log( dataList[0].first_name +' '+ dataList[0].last_name);
+});
 
 
 })(jQuery);

@@ -18,22 +18,21 @@
    - attr()
    - getAttribute(), setAttribute()
 5. class처리 : 
-   - addClass, removeClass, toggle
-   - classList.add, classList.remove, classList.toggle
+   - addClass(), removeClass(), toggle()
+   - classList.add(), classList.remove(), classList.toggle()
 6. animation :
    - animate()
    - setInterval(), clearInterval()
-7. 순서확인, 할당 
+7. 순서확인, 할당 : 배열, 유사배열
    - index(), eq()
-   - index, at()
+   - forEach - index, [] / at()
 8. 템플릿 처리(보간법)
-   - '문자' + 변수 + '문자'
-   - `${}`
+   - '문자 ' + 변수 + ' ' + '문자'
+   - `문자 ${} 문자`
 9. 외부파일 불러오기
    - $.ajax()
-   - XMLHttpRequest, fetch...
+   - fetch().then()
 10. 이벤트처리(클릭이벤트)
    - jQuery는 선택자 기준에서 처리되는 형태가 자동으로 전체를 순환하는 기능
    - javascript는 선택자를 기준으로 이벤트 수행을 모두 수행하도록 수동으로 순환명령
-
 ---

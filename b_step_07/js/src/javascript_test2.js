@@ -46,3 +46,19 @@ let b = 'my name is';
 let c = 'xido';
 
 console.log( `${a}. ${b} ${c} studio` );
+
+// ----------------------------------------------
+
+const url = "../data/data.json";
+
+fetch(url).then( function(data){
+  // console.log(data);
+  data.json().then(function(data){
+    const listData = data;
+    // console.log( listData );
+    let selectData = listData[2];
+    let first = selectData.first_name;
+    let last = selectData.last_name;
+    console.log( `${first} ${last}` );
+  });
+});

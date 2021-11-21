@@ -1,0 +1,144 @@
+
+[
+  {
+  "id": 1,
+  "first_name": "Winny",
+  "last_name": "Backshill",
+  "email": "wbackshill0@dion.ne.jp",
+  "gender": "Bigender",
+  "color": "Blue"
+}, {
+  "id": 2,
+  "first_name": "Oralla",
+  "last_name": "Abramson",
+  "email": "oabramson1@sfgate.com",
+  "gender": "Non-binary",
+  "color": "Khaki"
+}, {
+  "id": 3,
+  "first_name": "Orton",
+  "last_name": "Lafond",
+  "email": "olafond2@tinypic.com",
+  "gender": "Female",
+  "color": "Fuscia"
+}, {
+  "id": 4,
+  "first_name": "Maisey",
+  "last_name": "Hek",
+  "email": "mhek3@merriam-webster.com",
+  "gender": "Female",
+  "color": "Red"
+}, {
+  "id": 5,
+  "first_name": "Emmey",
+  "last_name": "Murphy",
+  "email": "emurphy4@icio.us",
+  "gender": "Bigender",
+  "color": "Green"
+}, {
+  "id": 6,
+  "first_name": "Lanny",
+  "last_name": "Austin",
+  "email": "laustin5@economist.com",
+  "gender": "Genderfluid",
+  "color": "Orange"
+}, {
+  "id": 7,
+  "first_name": "Carilyn",
+  "last_name": "Franey",
+  "email": "cfraney6@devhub.com",
+  "gender": "Genderfluid",
+  "color": "Fuscia"
+}, {
+  "id": 8,
+  "first_name": "Clay",
+  "last_name": "McMechan",
+  "email": "cmcmechan7@nydailynews.com",
+  "gender": "Bigender",
+  "color": "Maroon"
+}, {
+  "id": 9,
+  "first_name": "Gunilla",
+  "last_name": "Carnilian",
+  "email": "gcarnilian8@washingtonpost.com",
+  "gender": "Agender",
+  "color": "Goldenrod"
+}, {
+  "id": 10,
+  "first_name": "Jerrilee",
+  "last_name": "Achurch",
+  "email": "jachurch9@cmu.edu",
+  "gender": "Polygender",
+  "color": "Maroon"
+}, {
+  "id": 11,
+  "first_name": "Sylvia",
+  "last_name": "Kildea",
+  "email": "skildeaa@state.gov",
+  "gender": "Genderqueer",
+  "color": "Yellow"
+}, {
+  "id": 12,
+  "first_name": "Gregg",
+  "last_name": "Batecok",
+  "email": "gbatecokb@naver.com",
+  "gender": "Genderqueer",
+  "color": "Green"
+}, {
+  "id": 13,
+  "first_name": "Harriott",
+  "last_name": "Commins",
+  "email": "hcomminsc@desdev.cn",
+  "gender": "Polygender",
+  "color": "Violet"
+}, {
+  "id": 14,
+  "first_name": "Bambi",
+  "last_name": "Bathurst",
+  "email": "bbathurstd@netscape.com",
+  "gender": "Bigender",
+  "color": "Mauv"
+}, {
+  "id": 15,
+  "first_name": "Maxie",
+  "last_name": "Shilstone",
+  "email": "mshilstonee@nbcnews.com",
+  "gender": "Bigender",
+  "color": "Maroon"
+}, {
+  "id": 16,
+  "first_name": "Revkah",
+  "last_name": "Bunyan",
+  "email": "rbunyanf@csmonitor.com",
+  "gender": "Bigender",
+  "color": "Aquamarine"
+}, {
+  "id": 17,
+  "first_name": "Freedman",
+  "last_name": "Grishukov",
+  "email": "fgrishukovg@jimdo.com",
+  "gender": "Non-binary",
+  "color": "Purple"
+}, {
+  "id": 18,
+  "first_name": "Vassily",
+  "last_name": "Calender",
+  "email": "vcalenderh@zimbio.com",
+  "gender": "Non-binary",
+  "color": "Orange"
+}, {
+  "id": 19,
+  "first_name": "Justen",
+  "last_name": "Jowitt",
+  "email": "jjowitti@reddit.com",
+  "gender": "Bigender",
+  "color": "Violet"
+}, {
+  "id": 20,
+  "first_name": "Dinnie",
+  "last_name": "Climer",
+  "email": "dclimerj@ezinearticles.com",
+  "gender": "Polygender",
+  "color": "Fuscia"
+}
+]
